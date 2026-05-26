@@ -11,6 +11,7 @@ Each package in the `mellea_contribs` directory can be released independently by
 3. Create a GitHub release
 4. Upload wheel and source distribution files as release assets
 5. Generate release notes with installation instructions
+6. Rebuild and redeploy the [docs site](https://generative-computing.github.io/mellea-contribs/) so the new version, release date, and `mellea` compatibility appear in the package's version history.
 
 ## Package List
 

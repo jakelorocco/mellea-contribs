@@ -22,6 +22,9 @@ vllm_backup/
 
 .claude/
 
+# docs-site build output
+/_site/
+
 mellea-*
 # Created by https://www.toptal.com/developers/gitignore/api/python,direnv,visualstudiocode,pycharm,macos,jetbrains
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,direnv,visualstudiocode,pycharm,macos,jetbrains

@@ -1,0 +1,71 @@
+name: Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'mellea_contribs/**/pyproject.toml'
+      - 'mellea_contribs/**/README.md'
+      - 'docs-site/**'
+      - '.github/workflows/pages.yml'
+    tags:
+      - 'mellea-*/v[0-9]*'
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch or ref to build (defaults to the ref the workflow runs on)'
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.branch || github.ref }}
+          fetch-depth: 0  # Required: build.py reads `git show <tag>:...` for history.
+
+      - uses: astral-sh/setup-uv@v3
+
+      - name: Create venv and install build dependencies
+        run: |
+          uv venv --python 3.11 .venv
+          uv pip install --python .venv/bin/python Jinja2 markdown Pygments packaging
+
+      - name: Build site
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_SHA: ${{ github.sha }}
+        run: |
+          # base-url = "/<repo>" so assets and links resolve under the
+          # generative-computing.github.io/mellea-contribs/ project Pages site.
+          .venv/bin/python docs-site/build.py \
+            --output _site \
+            --repo "${GITHUB_REPOSITORY}" \
+            --base-url "/${GITHUB_REPOSITORY##*/}"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
