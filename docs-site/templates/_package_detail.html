@@ -1,0 +1,115 @@
+{% set pkg = entry.pkg %}
+{% set history = entry.history %}
+{% set latest_release = entry.latest_release %}
+{% set readme_html = entry.readme_html %}
+{% set install = entry.install %}
+<article id="pkg-{{ pkg.name }}" class="pane" role="tabpanel" hidden>
+  <h1><code>{{ pkg.name }}</code></h1>
+  <p class="lede">{{ pkg.description }}</p>
+
+  <p class="badges">
+    {% if latest_release %}
+      <a class="badge" href="{{ latest_release.release_url }}">v{{ latest_release.version }}</a>
+    {% else %}
+      <span class="badge muted">v{{ pkg.version }} (unreleased)</span>
+    {% endif %}
+    {% if pkg.license %}<span class="badge muted">{{ pkg.license }}</span>{% endif %}
+  </p>
+
+  <h2>Install</h2>
+  {% if install.has_release %}
+  <p>Install the latest release directly from its git tag:</p>
+  <pre><code>{{ install.pip_command }}</code></pre>
+  <p class="muted">To pin a different version, swap the tag in the URL above (see version history below).</p>
+  {% else %}
+  <p>No release has been tagged yet. Install from <code>main</code>:</p>
+  <pre><code>{{ install.pip_command }}</code></pre>
+  {% endif %}
+
+  <h2>Compatibility</h2>
+  <dl class="compat">
+    <dt><code>mellea</code></dt>
+    <dd>{% if pkg.mellea_constraint %}<code>{{ pkg.mellea_constraint }}</code>{% else %}<span class="muted">not declared</span>{% endif %}</dd>
+    <dt>Python</dt>
+    <dd>{% if pkg.requires_python %}<code>{{ pkg.requires_python }}</code>{% else %}<span class="muted">not declared</span>{% endif %}</dd>
+  </dl>
+
+  {% if pkg.other_deps %}
+  <h3>Other dependencies</h3>
+  <ul class="chip-list">
+    {% for dep in pkg.other_deps %}
+      <li><code>{{ dep.display() }}</code></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  <h2>Version history</h2>
+  {% if history %}
+  <p class="muted">Each row's install command pins <code>pip</code> to that exact tag.</p>
+  <table class="version-history">
+    <thead>
+      <tr>
+        <th>Version</th>
+        <th>Released</th>
+        <th><code>mellea</code> constraint</th>
+        <th>Install</th>
+        <th>Release</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for r in history %}
+      <tr>
+        <td>
+          v{{ r.version }}
+          {% if r.is_prerelease %}<span class="pill prerelease">pre-release</span>{% endif %}
+        </td>
+        <td>{{ r.date|fmt_date }}</td>
+        <td>{% if r.mellea_constraint %}<code>{{ r.mellea_constraint }}</code>{% else %}<span class="muted">(unknown)</span>{% endif %}</td>
+        <td><code class="install-snippet">{{ r.install_command }}</code></td>
+        <td><a href="{{ r.release_url }}">link</a></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p class="muted">No releases yet.</p>
+  {% endif %}
+
+  <h2>README</h2>
+  <div class="readme">
+  {{ readme_html|safe }}
+  </div>
+
+  <h2>Metadata</h2>
+  {% if pkg.authors %}
+  <h3>Authors</h3>
+  <ul class="chip-list">
+    {% for a in pkg.authors %}<li>{{ a }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if pkg.keywords %}
+  <h3>Keywords</h3>
+  <ul class="chip-list">
+    {% for k in pkg.keywords %}<li><code>{{ k }}</code></li>{% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if pkg.urls %}
+  <h3>Project URLs</h3>
+  <ul>
+    {% for label, url in pkg.urls.items() %}
+      <li>{{ label }}: <a href="{{ url }}">{{ url }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if pkg.classifiers %}
+  <details>
+    <summary>Classifiers ({{ pkg.classifiers|length }})</summary>
+    <ul class="chip-list">
+      {% for c in pkg.classifiers %}<li><code>{{ c }}</code></li>{% endfor %}
+    </ul>
+  </details>
+  {% endif %}
+</article>

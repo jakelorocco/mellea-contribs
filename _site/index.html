@@ -1,0 +1,2240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mellea-contribs</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="site-title" href="/">mellea-contribs</a>
+  <nav>
+    <a href="https://github.com/generative-computing/mellea-contribs">GitHub</a>
+    <a href="https://mellea.ai/">mellea.ai</a>
+  </nav>
+</header>
+<main>
+<div class="app">
+  <aside class="sidebar" aria-label="Packages">
+    <h2 class="sidebar-title">Packages</h2>
+    <ul class="package-list" role="tablist">
+      <li>
+        <a href="#/" data-target="overview" class="pkg-link" role="tab">Overview</a>
+      </li>
+        <li>
+          <a href="#/mellea-crewai" data-target="pkg-mellea-crewai" class="pkg-link" role="tab">
+            <span class="pkg-name"><code>mellea-crewai</code></span>
+            <span class="pkg-meta">
+v0.1.0            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#/mellea-dspy" data-target="pkg-mellea-dspy" class="pkg-link" role="tab">
+            <span class="pkg-name"><code>mellea-dspy</code></span>
+            <span class="pkg-meta">
+v0.1.0            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#/mellea-integration-core" data-target="pkg-mellea-integration-core" class="pkg-link" role="tab">
+            <span class="pkg-name"><code>mellea-integration-core</code></span>
+            <span class="pkg-meta">
+v0.1.0            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#/mellea-langchain" data-target="pkg-mellea-langchain" class="pkg-link" role="tab">
+            <span class="pkg-name"><code>mellea-langchain</code></span>
+            <span class="pkg-meta">
+v0.1.0            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#/mellea-reqlib" data-target="pkg-mellea-reqlib" class="pkg-link" role="tab">
+            <span class="pkg-name"><code>mellea-reqlib</code></span>
+            <span class="pkg-meta">
+<span class="muted">unreleased</span>            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#/mellea-tools" data-target="pkg-mellea-tools" class="pkg-link" role="tab">
+            <span class="pkg-name"><code>mellea-tools</code></span>
+            <span class="pkg-meta">
+<span class="muted">unreleased</span>            </span>
+          </a>
+        </li>
+    </ul>
+  </aside>
+
+  <section class="content">
+    <article id="overview" class="pane" role="tabpanel">
+      <h1>mellea-contribs packages</h1>
+      <p class="lede">
+        Incubation point for the mellea ecosystem. Each package ships independently;
+        select one in the sidebar for install instructions, release history, and
+        compatibility with <a href="https://github.com/generative-computing/mellea"><code>mellea</code></a>.
+      </p>
+
+      <p>
+        Source repo:
+        <a href="https://github.com/generative-computing/mellea-contribs">github.com/generative-computing/mellea-contribs</a>
+        · This site lists every subpackage under <code>mellea_contribs/</code>,
+        their tagged releases, and exact <code>pip install</code> commands.
+      </p>
+
+      <table class="package-index">
+        <thead>
+          <tr>
+            <th>Package</th>
+            <th>Description</th>
+            <th>Latest</th>
+            <th><code>mellea</code></th>
+            <th>Python</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#/mellea-crewai" class="pkg-link" data-target="pkg-mellea-crewai"><code>mellea-crewai</code></a></td>
+            <td>CrewAI integration for Mellea - enables CrewAI agents to use Mellea&#39;s generative programming capabilities</td>
+            <td>
+                <a href="https://github.com/generative-computing/mellea-contribs/releases/tag/mellea-crewai/v0.1.0">v0.1.0</a>
+            </td>
+            <td><code>mellea&gt;=0.3.0</code></td>
+            <td><code>&gt;=3.11</code></td>
+          </tr>
+          <tr>
+            <td><a href="#/mellea-dspy" class="pkg-link" data-target="pkg-mellea-dspy"><code>mellea-dspy</code></a></td>
+            <td>DSPy integration for Mellea - enabling structured prompting with generative programming</td>
+            <td>
+                <a href="https://github.com/generative-computing/mellea-contribs/releases/tag/mellea-dspy/v0.1.0">v0.1.0</a>
+            </td>
+            <td><code>mellea&gt;=0.3.2</code></td>
+            <td><code>&gt;=3.11</code></td>
+          </tr>
+          <tr>
+            <td><a href="#/mellea-integration-core" class="pkg-link" data-target="pkg-mellea-integration-core"><code>mellea-integration-core</code></a></td>
+            <td>Core abstractions for Mellea framework integrations</td>
+            <td>
+                <a href="https://github.com/generative-computing/mellea-contribs/releases/tag/mellea-integration-core/v0.1.0">v0.1.0</a>
+            </td>
+            <td><code>mellea&gt;=0.3.2</code></td>
+            <td><code>&gt;=3.11</code></td>
+          </tr>
+          <tr>
+            <td><a href="#/mellea-langchain" class="pkg-link" data-target="pkg-mellea-langchain"><code>mellea-langchain</code></a></td>
+            <td>LangChain-compatible chat model that wraps Mellea</td>
+            <td>
+                <a href="https://github.com/generative-computing/mellea-contribs/releases/tag/mellea-langchain/v0.1.0">v0.1.0</a>
+            </td>
+            <td><code>mellea&gt;=0.3.2</code></td>
+            <td><code>&gt;=3.11</code></td>
+          </tr>
+          <tr>
+            <td><a href="#/mellea-reqlib" class="pkg-link" data-target="pkg-mellea-reqlib"><code>mellea-reqlib</code></a></td>
+            <td>mellea-contribs is a library for incubating generative programming libraries</td>
+            <td>
+                <span class="muted">v0.0.1 (unreleased)</span>
+            </td>
+            <td><code>mellea[litellm]==0.3.2</code></td>
+            <td><code>&gt;=3.11</code></td>
+          </tr>
+          <tr>
+            <td><a href="#/mellea-tools" class="pkg-link" data-target="pkg-mellea-tools"><code>mellea-tools</code></a></td>
+            <td>mellea-contribs is a library for incubating generative programming libraries</td>
+            <td>
+                <span class="muted">v0.0.1 (unreleased)</span>
+            </td>
+            <td><code>mellea[litellm]==0.3.2</code></td>
+            <td><code>&gt;=3.11</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+<article id="pkg-mellea-crewai" class="pane" role="tabpanel" hidden>
+  <h1><code>mellea-crewai</code></h1>
+  <p class="lede">CrewAI integration for Mellea - enables CrewAI agents to use Mellea&#39;s generative programming capabilities</p>
+
+  <p class="badges">
+      <a class="badge" href="https://github.com/generative-computing/mellea-contribs/releases/tag/mellea-crewai/v0.1.0">v0.1.0</a>
+<span class="badge muted">Apache-2.0</span>  </p>
+
+  <h2>Install</h2>
+  <p>Install the latest release directly from its git tag:</p>
+  <pre><code>pip install &#34;git+https://github.com/generative-computing/mellea-contribs.git@mellea-crewai/v0.1.0#subdirectory=mellea_contribs/crewai_backend&#34;</code></pre>
+  <p class="muted">To pin a different version, swap the tag in the URL above (see version history below).</p>
+
+  <h2>Compatibility</h2>
+  <dl class="compat">
+    <dt><code>mellea</code></dt>
+    <dd><code>mellea&gt;=0.3.0</code></dd>
+    <dt>Python</dt>
+    <dd><code>&gt;=3.11</code></dd>
+  </dl>
+
+  <h3>Other dependencies</h3>
+  <ul class="chip-list">
+      <li><code>mellea-integration-core</code></li>
+      <li><code>crewai&gt;=0.1.0</code></li>
+      <li><code>pydantic&gt;=2.0.0</code></li>
+  </ul>
+
+  <h2>Version history</h2>
+  <p class="muted">Each row's install command pins <code>pip</code> to that exact tag.</p>
+  <table class="version-history">
+    <thead>
+      <tr>
+        <th>Version</th>
+        <th>Released</th>
+        <th><code>mellea</code> constraint</th>
+        <th>Install</th>
+        <th>Release</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          v0.1.0
+        </td>
+        <td>2026-04-27</td>
+        <td><code>mellea&gt;=0.3.0</code></td>
+        <td><code class="install-snippet">pip install &#34;git+https://github.com/generative-computing/mellea-contribs.git@mellea-crewai/v0.1.0#subdirectory=mellea_contribs/crewai_backend&#34;</code></td>
+        <td><a href="https://github.com/generative-computing/mellea-contribs/releases/tag/mellea-crewai/v0.1.0">link</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>README</h2>
+  <div class="readme">
+  <h1 id="mellea-llm-for-crewai">Mellea LLM for CrewAI</h1>
+<p>A CrewAI-compatible LLM implementation that wraps Mellea, enabling CrewAI agents to use Mellea's generative programming capabilities including requirements, validation, and sampling strategies.</p>
+<h2 id="overview">Overview</h2>
+<p>This integration allows CrewAI users to leverage Mellea's structured approach to generative programming while using familiar CrewAI APIs. It provides full support for:</p>
+<ul>
+<li>✅ <strong>Standard LLM Calls</strong>: Synchronous and asynchronous generation</li>
+<li>✅ <strong>Requirements &amp; Validation</strong>: Mellea's requirements and sampling strategies</li>
+<li>✅ <strong>Task Guardrails</strong>: Convert Mellea requirements to CrewAI guardrails</li>
+<li>✅ <strong>Tool Calling</strong>: Function calling with CrewAI agents</li>
+<li>✅ <strong>Multi-Backend</strong>: Works with Ollama, OpenAI, WatsonX, and more</li>
+<li>✅ <strong>Event Integration</strong>: Full CrewAI event bus support</li>
+<li>✅ <strong>Token Tracking</strong>: Automatic usage metrics</li>
+</ul>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="installation">Installation</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Install from PyPI (once published)</span>
+pip<span class="w"> </span>install<span class="w"> </span>mellea-crewai
+
+<span class="c1"># Or install from source</span>
+<span class="nb">cd</span><span class="w"> </span>integrations/crewai
+pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+</code></pre></div>
+
+<h3 id="basic-usage">Basic Usage</h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">mellea</span><span class="w"> </span><span class="kn">import</span> <span class="n">start_session</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea_crewai</span><span class="w"> </span><span class="kn">import</span> <span class="n">MelleaLLM</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">crewai</span><span class="w"> </span><span class="kn">import</span> <span class="n">Agent</span><span class="p">,</span> <span class="n">Task</span><span class="p">,</span> <span class="n">Crew</span>
+
+<span class="c1"># Create Mellea session (with any backend)</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">start_session</span><span class="p">()</span>  <span class="c1"># Uses Ollama by default</span>
+
+<span class="c1"># Create CrewAI LLM</span>
+<span class="n">llm</span> <span class="o">=</span> <span class="n">MelleaLLM</span><span class="p">(</span><span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">)</span>
+
+<span class="c1"># Use with CrewAI agents</span>
+<span class="n">agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span>
+    <span class="n">role</span><span class="o">=</span><span class="s2">&quot;Researcher&quot;</span><span class="p">,</span>
+    <span class="n">goal</span><span class="o">=</span><span class="s2">&quot;Research AI trends thoroughly&quot;</span><span class="p">,</span>
+    <span class="n">backstory</span><span class="o">=</span><span class="s2">&quot;You are an expert AI researcher&quot;</span><span class="p">,</span>
+    <span class="n">llm</span><span class="o">=</span><span class="n">llm</span>
+<span class="p">)</span>
+
+<span class="n">task</span> <span class="o">=</span> <span class="n">Task</span><span class="p">(</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Research the latest trends in generative AI&quot;</span><span class="p">,</span>
+    <span class="n">agent</span><span class="o">=</span><span class="n">agent</span><span class="p">,</span>
+    <span class="n">expected_output</span><span class="o">=</span><span class="s2">&quot;A comprehensive report on AI trends&quot;</span>
+<span class="p">)</span>
+
+<span class="n">crew</span> <span class="o">=</span> <span class="n">Crew</span><span class="p">(</span><span class="n">agents</span><span class="o">=</span><span class="p">[</span><span class="n">agent</span><span class="p">],</span> <span class="n">tasks</span><span class="o">=</span><span class="p">[</span><span class="n">task</span><span class="p">])</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">crew</span><span class="o">.</span><span class="n">kickoff</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="using-with-different-mellea-backends">Using with Different Mellea Backends</h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">mellea</span><span class="w"> </span><span class="kn">import</span> <span class="n">MelleaSession</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea.backends.openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAIBackend</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea.backends.ollama</span><span class="w"> </span><span class="kn">import</span> <span class="n">OllamaModelBackend</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea_crewai</span><span class="w"> </span><span class="kn">import</span> <span class="n">MelleaLLM</span>
+
+<span class="c1"># Option 1: OpenAI backend</span>
+<span class="n">openai_backend</span> <span class="o">=</span> <span class="n">OpenAIBackend</span><span class="p">(</span><span class="n">model_id</span><span class="o">=</span><span class="s2">&quot;gpt-4&quot;</span><span class="p">)</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">MelleaSession</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="n">openai_backend</span><span class="p">)</span>
+<span class="n">llm</span> <span class="o">=</span> <span class="n">MelleaLLM</span><span class="p">(</span><span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">)</span>
+
+<span class="c1"># Option 2: Ollama backend</span>
+<span class="n">ollama_backend</span> <span class="o">=</span> <span class="n">OllamaModelBackend</span><span class="p">(</span><span class="n">model_id</span><span class="o">=</span><span class="s2">&quot;llama2&quot;</span><span class="p">)</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">MelleaSession</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="n">ollama_backend</span><span class="p">)</span>
+<span class="n">llm</span> <span class="o">=</span> <span class="n">MelleaLLM</span><span class="p">(</span><span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">)</span>
+
+<span class="c1"># Use the same CrewAI code regardless of backend</span>
+<span class="n">agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="n">role</span><span class="o">=</span><span class="s2">&quot;Assistant&quot;</span><span class="p">,</span> <span class="n">goal</span><span class="o">=</span><span class="s2">&quot;Help users&quot;</span><span class="p">,</span> <span class="n">llm</span><span class="o">=</span><span class="n">llm</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="mellea-unique-features">Mellea Unique Features</h2>
+<h3 id="requirements-and-validation">Requirements and Validation</h3>
+<p>Mellea's requirements system ensures LLM outputs meet specific criteria:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">mellea.stdlib.requirements</span><span class="w"> </span><span class="kn">import</span> <span class="n">req</span><span class="p">,</span> <span class="n">check</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea.stdlib.sampling</span><span class="w"> </span><span class="kn">import</span> <span class="n">RejectionSamplingStrategy</span>
+
+<span class="c1"># Define requirements</span>
+<span class="n">llm</span> <span class="o">=</span> <span class="n">MelleaLLM</span><span class="p">(</span>
+    <span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">,</span>
+    <span class="n">requirements</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">req</span><span class="p">(</span><span class="s2">&quot;The response should be professional&quot;</span><span class="p">),</span>
+        <span class="n">req</span><span class="p">(</span><span class="s2">&quot;Include specific examples&quot;</span><span class="p">),</span>
+        <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Do not mention competitors&quot;</span><span class="p">)</span>
+    <span class="p">],</span>
+    <span class="n">strategy</span><span class="o">=</span><span class="n">RejectionSamplingStrategy</span><span class="p">(</span><span class="n">loop_budget</span><span class="o">=</span><span class="mi">5</span><span class="p">),</span>
+    <span class="n">return_sampling_results</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+<span class="c1"># Use with CrewAI agents</span>
+<span class="n">agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span>
+    <span class="n">role</span><span class="o">=</span><span class="s2">&quot;Professional Writer&quot;</span><span class="p">,</span>
+    <span class="n">goal</span><span class="o">=</span><span class="s2">&quot;Write professional content&quot;</span><span class="p">,</span>
+    <span class="n">llm</span><span class="o">=</span><span class="n">llm</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h3 id="custom-validation-functions">Custom Validation Functions</h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">mellea.stdlib.requirements</span><span class="w"> </span><span class="kn">import</span> <span class="n">req</span><span class="p">,</span> <span class="n">simple_validate</span>
+
+<span class="c1"># Custom validation</span>
+<span class="n">llm</span> <span class="o">=</span> <span class="n">MelleaLLM</span><span class="p">(</span>
+    <span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">,</span>
+    <span class="n">requirements</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">req</span><span class="p">(</span><span class="s2">&quot;Use only lowercase&quot;</span><span class="p">,</span> 
+            <span class="n">validation_fn</span><span class="o">=</span><span class="n">simple_validate</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">x</span><span class="p">)),</span>
+        <span class="n">req</span><span class="p">(</span><span class="s2">&quot;Length between 100-500 characters&quot;</span><span class="p">,</span>
+            <span class="n">validation_fn</span><span class="o">=</span><span class="n">simple_validate</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">100</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">500</span><span class="p">))</span>
+    <span class="p">]</span>
+
+<span class="c1">### Task Guardrails with Mellea Requirements</span>
+
+<span class="n">Convert</span> <span class="n">Mellea</span> <span class="n">requirements</span> <span class="n">into</span> <span class="n">CrewAI</span><span class="o">-</span><span class="n">compatible</span> <span class="n">guardrails</span> <span class="k">for</span> <span class="n">task</span> <span class="n">output</span> <span class="n">validation</span><span class="p">:</span>
+
+<span class="err">```</span><span class="n">python</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea.stdlib.requirements</span><span class="w"> </span><span class="kn">import</span> <span class="n">simple_validate</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea_crewai</span><span class="w"> </span><span class="kn">import</span> <span class="n">create_guardrail</span><span class="p">,</span> <span class="n">create_guardrails</span><span class="p">,</span> <span class="n">word_count_guardrail</span>
+
+<span class="c1"># Option 1: Convert Mellea requirement to guardrail</span>
+<span class="n">word_count_req</span> <span class="o">=</span> <span class="n">simple_validate</span><span class="p">(</span>
+    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">50</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">&lt;=</span> <span class="mi">150</span><span class="p">,</span>
+    <span class="s2">&quot;Must be between 50-150 words&quot;</span>
+<span class="p">)</span>
+<span class="n">guardrail</span> <span class="o">=</span> <span class="n">create_guardrail</span><span class="p">(</span><span class="n">word_count_req</span><span class="p">)</span>
+
+<span class="c1"># Option 2: Use helper functions</span>
+<span class="n">guardrails</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">word_count_guardrail</span><span class="p">(</span><span class="n">min_words</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">max_words</span><span class="o">=</span><span class="mi">150</span><span class="p">),</span>
+    <span class="n">contains_keywords_guardrail</span><span class="p">([</span><span class="s2">&quot;AI&quot;</span><span class="p">,</span> <span class="s2">&quot;technology&quot;</span><span class="p">]),</span>
+<span class="p">]</span>
+
+<span class="c1"># Use in task with automatic retry on validation failure</span>
+<span class="n">task</span> <span class="o">=</span> <span class="n">Task</span><span class="p">(</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Write about AI&quot;</span><span class="p">,</span>
+    <span class="n">expected_output</span><span class="o">=</span><span class="s2">&quot;AI article&quot;</span><span class="p">,</span>
+    <span class="n">agent</span><span class="o">=</span><span class="n">agent</span><span class="p">,</span>
+    <span class="n">guardrails</span><span class="o">=</span><span class="n">guardrails</span><span class="p">,</span>
+    <span class="n">guardrail_max_retries</span><span class="o">=</span><span class="mi">3</span>  <span class="c1"># Retry up to 3 times if validation fails</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p>Available helper functions:
+- <code>word_count_guardrail(min_words, max_words)</code>: Validate word count
+- <code>contains_keywords_guardrail(keywords, case_sensitive)</code>: Check for required keywords
+- <code>no_profanity_guardrail(profanity_list)</code>: Filter inappropriate content
+- <code>format_output_guardrail(strip_whitespace, capitalize_first)</code>: Format output</p>
+<p>See <a href="examples/validator_usage_example.py"><code>examples/validator_usage_example.py</code></a> for complete examples.
+)</p>
+<div class="codehilite"><pre><span></span><code><span class="err">##</span><span class="w"> </span><span class="nx">Architecture</span>
+
+<span class="nx">This</span><span class="w"> </span><span class="nx">integration</span><span class="w"> </span><span class="nx">uses</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="o">**</span><span class="nx">mellea</span><span class="o">-</span><span class="nx">integration</span><span class="o">-</span><span class="nx">core</span><span class="o">**</span><span class="w"> </span><span class="kn">package</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">clean</span><span class="p">,</span><span class="w"> </span><span class="nx">maintainable</span><span class="w"> </span><span class="nx">code</span><span class="w"> </span><span class="nx">with</span><span class="w"> </span><span class="o">~</span><span class="mi">60</span><span class="o">%</span><span class="w"> </span><span class="nx">less</span><span class="w"> </span><span class="nx">duplication</span><span class="w"> </span><span class="nx">compared</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">standalone</span><span class="w"> </span><span class="nx">implementations</span><span class="p">.</span>
+</code></pre></div>
+
+<p>┌─────────────────────────────────────────────────────────┐
+│              CrewAI Application                          │
+│  (Agents, Tasks, Crews, Tools)                          │
+└─────────────────────┬───────────────────────────────────┘
+                      │
+                      ▼
+┌─────────────────────────────────────────────────────────┐
+│         MelleaLLM (BaseLLM + MelleaIntegrationBase)     │
+│  • CrewAI-specific event handling                       │
+│  • Tool execution logic                                 │
+│  • CrewAI message/tool converters                       │
+└─────────────────────┬───────────────────────────────────┘
+                      │
+                      ▼
+┌─────────────────────────────────────────────────────────┐
+│           MelleaIntegrationBase (Core Package)          │
+│  • Message preparation &amp; conversion                     │
+│  • Tool handling &amp; conversion                           │
+│  • Session management (chat vs instruct)                │
+│  • Requirements &amp; sampling strategy support             │
+└─────────────────────┬───────────────────────────────────┘
+                      │
+                      ▼
+┌─────────────────────────────────────────────────────────┐
+│                 Mellea Session                           │
+│  (chat, instruct, achat, ainstruct)                     │
+└─────────────────────┬───────────────────────────────────┘
+                      │
+                      ▼
+┌─────────────────────────────────────────────────────────┐
+│              Mellea Backends                             │
+│  Ollama | OpenAI | WatsonX | HuggingFace | ...         │
+└─────────────────────────────────────────────────────────┘</p>
+<div class="codehilite"><pre><span></span><code><span class="c1">### Core Components</span>
+
+<span class="o">-</span><span class="w"> </span><span class="o">**</span><span class="n">CrewAIMessageConverter</span><span class="o">**</span><span class="p">:</span><span class="w"> </span><span class="n">Converts</span><span class="w"> </span><span class="n">between</span><span class="w"> </span><span class="n">CrewAI</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">Mellea</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="n">formats</span>
+<span class="o">-</span><span class="w"> </span><span class="o">**</span><span class="n">CrewAIToolConverter</span><span class="o">**</span><span class="p">:</span><span class="w"> </span><span class="n">Converts</span><span class="w"> </span><span class="n">between</span><span class="w"> </span><span class="n">CrewAI</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">Mellea</span><span class="w"> </span><span class="k">tool</span><span class="w"> </span><span class="n">formats</span>
+<span class="o">-</span><span class="w"> </span><span class="o">**</span><span class="n">MelleaIntegrationBase</span><span class="o">**</span><span class="p">:</span><span class="w"> </span><span class="n">Provides</span><span class="w"> </span><span class="n">common</span><span class="w"> </span><span class="n">integration</span><span class="w"> </span><span class="n">patterns</span><span class="w"> </span><span class="p">(</span><span class="n">from</span><span class="w"> </span><span class="n">mellea</span><span class="o">-</span><span class="n">integration</span><span class="o">-</span><span class="n">core</span><span class="p">)</span>
+
+<span class="c1">## Features</span>
+
+<span class="c1">### Interface Mapping</span>
+
+<span class="o">|</span><span class="w"> </span><span class="n">CrewAI</span><span class="w"> </span><span class="n">Method</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Mellea</span><span class="w"> </span><span class="n">Method</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Notes</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|---------------|---------------|-------|</span>
+<span class="o">|</span><span class="w"> </span><span class="err">`</span><span class="n">call</span><span class="p">()</span><span class="err">`</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="err">`</span><span class="n">chat</span><span class="p">()</span><span class="err">`</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="err">`</span><span class="n">instruct</span><span class="p">()</span><span class="err">`</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Uses</span><span class="w"> </span><span class="err">`</span><span class="n">instruct</span><span class="p">()</span><span class="err">`</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="n">requirements</span><span class="w"> </span><span class="n">provided</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w"> </span><span class="err">`</span><span class="n">acall</span><span class="p">()</span><span class="err">`</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="err">`</span><span class="n">achat</span><span class="p">()</span><span class="err">`</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="err">`</span><span class="n">ainstruct</span><span class="p">()</span><span class="err">`</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Async</span><span class="w"> </span><span class="n">version</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w"> </span><span class="err">`</span><span class="n">supports_stop_words</span><span class="p">()</span><span class="err">`</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Post</span><span class="o">-</span><span class="n">processing</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Handled</span><span class="w"> </span><span class="n">via</span><span class="w"> </span><span class="err">`</span><span class="n">_apply_stop_words</span><span class="p">()</span><span class="err">`</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w"> </span><span class="err">`</span><span class="n">get_context_window_size</span><span class="p">()</span><span class="err">`</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Backend</span><span class="o">-</span><span class="n">specific</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Queries</span><span class="w"> </span><span class="n">Mellea</span><span class="w"> </span><span class="n">backend</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w"> </span><span class="err">`</span><span class="n">supports_multimodal</span><span class="p">()</span><span class="err">`</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Backend</span><span class="o">-</span><span class="n">specific</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Queries</span><span class="w"> </span><span class="n">Mellea</span><span class="w"> </span><span class="n">backend</span><span class="w"> </span><span class="o">|</span>
+
+<span class="c1">### Message Format Conversion</span>
+
+<span class="n">Automatic</span><span class="w"> </span><span class="n">conversion</span><span class="w"> </span><span class="n">between</span><span class="w"> </span><span class="n">CrewAI</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">Mellea</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="n">formats</span><span class="p">:</span>
+
+<span class="err">```</span><span class="n">python</span>
+<span class="c1"># CrewAI → Mellea</span>
+<span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;system&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">}</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">Message</span><span class="p">(</span><span class="n">role</span><span class="o">=</span><span class="s2">&quot;system&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">)</span>
+<span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">}</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">Message</span><span class="p">(</span><span class="n">role</span><span class="o">=</span><span class="s2">&quot;user&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">)</span>
+<span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;assistant&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">}</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">Message</span><span class="p">(</span><span class="n">role</span><span class="o">=</span><span class="s2">&quot;assistant&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="tool-calling">Tool Calling</h3>
+<p>Automatic tool conversion and execution:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">crewai.tools</span><span class="w"> </span><span class="kn">import</span> <span class="n">Tool</span>
+
+<span class="c1"># Define CrewAI tool</span>
+<span class="nd">@Tool</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">search_web</span><span class="p">(</span><span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Search the web for information.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Results for: </span><span class="si">{</span><span class="n">query</span><span class="si">}</span><span class="s2">&quot;</span>
+
+<span class="c1"># Tools are automatically converted to Mellea format</span>
+<span class="n">agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span>
+    <span class="n">role</span><span class="o">=</span><span class="s2">&quot;Researcher&quot;</span><span class="p">,</span>
+    <span class="n">tools</span><span class="o">=</span><span class="p">[</span><span class="n">search_web</span><span class="p">],</span>
+    <span class="n">llm</span><span class="o">=</span><span class="n">llm</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h3 id="event-integration">Event Integration</h3>
+<p>Full integration with CrewAI's event bus:
+- <code>LLMCallStartedEvent</code>: When LLM call begins
+- <code>LLMCallCompletedEvent</code>: When LLM call succeeds
+- <code>LLMCallFailedEvent</code>: When LLM call fails
+- <code>ToolUsageStartedEvent</code>: When tool execution begins
+- <code>ToolUsageFinishedEvent</code>: When tool execution completes
+- <code>ToolUsageErrorEvent</code>: When tool execution fails</p>
+<h2 id="project-structure">Project Structure</h2>
+<div class="codehilite"><pre><span></span><code><span class="n">integrations</span><span class="o">/</span><span class="n">crewai</span><span class="o">/</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">README</span><span class="o">.</span><span class="n">md</span><span class="w">                          </span><span class="c1"># This file</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">INTEGRATION_PLAN</span><span class="o">.</span><span class="n">md</span><span class="w">                </span><span class="c1"># Detailed integration plan</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">GETTING_STARTED</span><span class="o">.</span><span class="n">md</span><span class="w">                 </span><span class="c1"># Step-by-step guide</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">VALIDATORS_IMPLEMENTATION_PLAN</span><span class="o">.</span><span class="n">md</span><span class="w">  </span><span class="c1"># Validators implementation plan</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">pyproject</span><span class="o">.</span><span class="n">toml</span><span class="w">                     </span><span class="c1"># Package configuration</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">src</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">mellea_crewai</span><span class="o">/</span>
+<span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="n">__init__</span><span class="o">.</span><span class="n">py</span><span class="w">               </span><span class="c1"># Package exports</span>
+<span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="n">llm</span><span class="o">.</span><span class="n">py</span><span class="w">                    </span><span class="c1"># MelleaLLM class (uses MelleaIntegrationBase)</span>
+<span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="n">message_conversion</span><span class="o">.</span><span class="n">py</span><span class="w">     </span><span class="c1"># CrewAIMessageConverter</span>
+<span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="n">tool_conversion</span><span class="o">.</span><span class="n">py</span><span class="w">        </span><span class="c1"># CrewAIToolConverter</span>
+<span class="err">│</span><span class="w">       </span><span class="err">└──</span><span class="w"> </span><span class="n">validators</span><span class="o">.</span><span class="n">py</span><span class="w">             </span><span class="c1"># Task guardrail validators</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">tests</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">test_llm</span><span class="o">.</span><span class="n">py</span><span class="w">                   </span><span class="c1"># Core LLM tests</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">test_message_conversion</span><span class="o">.</span><span class="n">py</span><span class="w">    </span><span class="c1"># Message conversion tests</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">test_tool_conversion</span><span class="o">.</span><span class="n">py</span><span class="w">       </span><span class="c1"># Tool conversion tests</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">test_validators</span><span class="o">.</span><span class="n">py</span><span class="w">            </span><span class="c1"># Validator tests</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">test_requirements</span><span class="o">.</span><span class="n">py</span><span class="w">          </span><span class="c1"># Requirements feature tests</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">test_sampling</span><span class="o">.</span><span class="n">py</span><span class="w">              </span><span class="c1"># Sampling strategy tests</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">integration</span><span class="o">/</span>
+<span class="err">│</span><span class="w">       </span><span class="err">└──</span><span class="w"> </span><span class="n">test_validators_integration</span><span class="o">.</span><span class="n">py</span><span class="w">  </span><span class="c1"># Validator integration tests</span>
+<span class="err">└──</span><span class="w"> </span><span class="n">examples</span><span class="o">/</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">basic_usage</span><span class="o">.</span><span class="n">py</span><span class="w">                </span><span class="c1"># Simple agent example</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">tool_usage_example</span><span class="o">.</span><span class="n">py</span><span class="w">         </span><span class="c1"># Tool calling example</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">requirements_example</span><span class="o">.</span><span class="n">py</span><span class="w">       </span><span class="c1"># Requirements validation</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">validator_usage_example</span><span class="o">.</span><span class="n">py</span><span class="w">    </span><span class="c1"># Task guardrails with validators</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">async_usage_example</span><span class="o">.</span><span class="n">py</span><span class="w">        </span><span class="c1"># Async/concurrent execution</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">multi_agent_crew_example</span><span class="o">.</span><span class="n">py</span><span class="w">   </span><span class="c1"># Multi-agent crew collaboration</span>
+<span class="w">    </span><span class="err">└──</span><span class="w"> </span><span class="n">streaming_example</span><span class="o">.</span><span class="n">py</span><span class="w">          </span><span class="c1"># Streaming responses</span>
+</code></pre></div>
+
+<p><strong>Note</strong>: This integration has been refactored to use <a href="../mellea-integration-core/">mellea-integration-core</a> for cleaner, more maintainable code with reduced duplication.</p>
+<h2 id="development">Development</h2>
+<h3 id="setup-development-environment">Setup Development Environment</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Clone the repository</span>
+git<span class="w"> </span>clone<span class="w"> </span>&lt;repository-url&gt;
+<span class="nb">cd</span><span class="w"> </span>integrations/crewai
+
+<span class="c1"># Install in development mode</span>
+pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;.[dev]&quot;</span>
+</code></pre></div>
+
+<h3 id="running-tests">Running Tests</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Run all tests</span>
+pytest
+
+<span class="c1"># Run with coverage</span>
+pytest<span class="w"> </span>--cov<span class="o">=</span>mellea_crewai<span class="w"> </span>--cov-report<span class="o">=</span>html
+
+<span class="c1"># Run specific test file</span>
+pytest<span class="w"> </span>tests/test_llm.py
+
+<span class="c1"># Run with specific markers</span>
+pytest<span class="w"> </span>-m<span class="w"> </span>ollama<span class="w">  </span><span class="c1"># Only Ollama tests</span>
+pytest<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;not qualitative&quot;</span><span class="w">  </span><span class="c1"># Skip qualitative tests</span>
+</code></pre></div>
+
+<h3 id="code-quality">Code Quality</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Format code</span>
+ruff<span class="w"> </span>format<span class="w"> </span>.
+
+<span class="c1"># Lint code</span>
+ruff<span class="w"> </span>check<span class="w"> </span>.
+
+<span class="c1"># Type checking</span>
+mypy<span class="w"> </span>src/mellea_crewai
+</code></pre></div>
+
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Python &gt;= 3.10</li>
+<li>mellea &gt;= 0.3.0</li>
+<li>mellea-integration-core &gt;= 0.1.0</li>
+<li>crewai &gt;= 0.1.0</li>
+<li>pydantic &gt;= 2.0.0</li>
+</ul>
+<p>Optional dependencies:
+- pytest &gt;= 7.0.0 (for testing)
+- ruff &gt;= 0.1.0 (for linting)
+- mypy &gt;= 1.0.0 (for type checking)</p>
+<h2 id="use-cases">Use Cases</h2>
+<h3 id="1-multi-backend-crewai-applications">1. Multi-Backend CrewAI Applications</h3>
+<p>Easily switch between different model providers:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Development: Use Ollama</span>
+<span class="n">dev_llm</span> <span class="o">=</span> <span class="n">MelleaLLM</span><span class="p">(</span>
+    <span class="n">mellea_session</span><span class="o">=</span><span class="n">MelleaSession</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="n">OllamaModelBackend</span><span class="p">())</span>
+<span class="p">)</span>
+
+<span class="c1"># Production: Use OpenAI</span>
+<span class="n">prod_llm</span> <span class="o">=</span> <span class="n">MelleaLLM</span><span class="p">(</span>
+    <span class="n">mellea_session</span><span class="o">=</span><span class="n">MelleaSession</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="n">OpenAIBackend</span><span class="p">())</span>
+<span class="p">)</span>
+
+<span class="c1"># Same agent code works with both</span>
+<span class="n">agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="n">role</span><span class="o">=</span><span class="s2">&quot;Assistant&quot;</span><span class="p">,</span> <span class="n">llm</span><span class="o">=</span><span class="n">dev_llm</span><span class="p">)</span>  <span class="c1"># or prod_llm</span>
+</code></pre></div>
+
+<h3 id="2-validated-agent-outputs">2. Validated Agent Outputs</h3>
+<p>Ensure agent outputs meet specific criteria:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">llm</span> <span class="o">=</span> <span class="n">MelleaLLM</span><span class="p">(</span>
+    <span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">,</span>
+    <span class="n">requirements</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">req</span><span class="p">(</span><span class="s2">&quot;Response must be under 500 words&quot;</span><span class="p">),</span>
+        <span class="n">req</span><span class="p">(</span><span class="s2">&quot;Must include actionable recommendations&quot;</span><span class="p">),</span>
+        <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Do not include personal opinions&quot;</span><span class="p">)</span>
+    <span class="p">],</span>
+    <span class="n">strategy</span><span class="o">=</span><span class="n">RejectionSamplingStrategy</span><span class="p">(</span><span class="n">loop_budget</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="n">role</span><span class="o">=</span><span class="s2">&quot;Analyst&quot;</span><span class="p">,</span> <span class="n">llm</span><span class="o">=</span><span class="n">llm</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="3-multi-agent-crews-with-different-backends">3. Multi-Agent Crews with Different Backends</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Researcher uses powerful model</span>
+<span class="n">researcher_llm</span> <span class="o">=</span> <span class="n">MelleaLLM</span><span class="p">(</span>
+    <span class="n">mellea_session</span><span class="o">=</span><span class="n">MelleaSession</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="n">OpenAIBackend</span><span class="p">(</span><span class="n">model_id</span><span class="o">=</span><span class="s2">&quot;gpt-4&quot;</span><span class="p">))</span>
+<span class="p">)</span>
+
+<span class="c1"># Writer uses local model</span>
+<span class="n">writer_llm</span> <span class="o">=</span> <span class="n">MelleaLLM</span><span class="p">(</span>
+    <span class="n">mellea_session</span><span class="o">=</span><span class="n">MelleaSession</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="n">OllamaModelBackend</span><span class="p">(</span><span class="n">model_id</span><span class="o">=</span><span class="s2">&quot;llama2&quot;</span><span class="p">))</span>
+<span class="p">)</span>
+
+<span class="n">researcher</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="n">role</span><span class="o">=</span><span class="s2">&quot;Researcher&quot;</span><span class="p">,</span> <span class="n">llm</span><span class="o">=</span><span class="n">researcher_llm</span><span class="p">)</span>
+<span class="n">writer</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="n">role</span><span class="o">=</span><span class="s2">&quot;Writer&quot;</span><span class="p">,</span> <span class="n">llm</span><span class="o">=</span><span class="n">writer_llm</span><span class="p">)</span>
+
+<span class="n">crew</span> <span class="o">=</span> <span class="n">Crew</span><span class="p">(</span><span class="n">agents</span><span class="o">=</span><span class="p">[</span><span class="n">researcher</span><span class="p">,</span> <span class="n">writer</span><span class="p">],</span> <span class="n">tasks</span><span class="o">=</span><span class="p">[</span><span class="o">...</span><span class="p">])</span>
+</code></pre></div>
+
+<h2 id="examples">Examples</h2>
+<p>See the <code>examples/</code> directory for complete examples:</p>
+<ul>
+<li><a href="examples/basic_usage.py"><code>basic_usage.py</code></a>: Simple agent with Mellea</li>
+<li><a href="examples/tool_usage_example.py"><code>tool_usage_example.py</code></a>: Tool calling with custom tools</li>
+<li><a href="examples/requirements_example.py"><code>requirements_example.py</code></a>: Requirements validation</li>
+<li><a href="examples/validator_usage_example.py"><code>validator_usage_example.py</code></a>: Task guardrails with validators</li>
+<li><a href="examples/async_usage_example.py"><code>async_usage_example.py</code></a>: Async/concurrent execution</li>
+<li><a href="examples/multi_agent_crew_example.py"><code>multi_agent_crew_example.py</code></a>: Multi-agent crew collaboration</li>
+<li><a href="examples/streaming_example.py"><code>streaming_example.py</code></a>: Streaming responses (backend-dependent)</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>We welcome contributions! Please see our <a href="../../CONTRIBUTING.md">Contributing Guide</a> for details.</p>
+<h3 id="areas-for-contribution">Areas for Contribution</h3>
+<ol>
+<li><strong>Features</strong>: Additional CrewAI integrations</li>
+<li><strong>Testing</strong>: More integration tests and examples</li>
+<li><strong>Documentation</strong>: Improve docs and add tutorials</li>
+<li><strong>Performance</strong>: Optimize critical paths</li>
+<li><strong>Examples</strong>: Create more usage examples</li>
+</ol>
+<h2 id="license">License</h2>
+<p>This project is licensed under the Apache License 2.0 - see the <a href="../../LICENSE">LICENSE</a> file for details.</p>
+<h2 id="support">Support</h2>
+<ul>
+<li><strong>Issues</strong>: Report bugs on <a href="https://github.com/generative-computing/mellea/issues">GitHub Issues</a></li>
+<li><strong>Discord</strong>: Join the <a href="https://ibm.biz/mellea-discord">Mellea Discord</a></li>
+<li><strong>Documentation</strong>: Visit <a href="https://mellea.ai/">mellea.ai</a></li>
+</ul>
+<h2 id="faq">FAQ</h2>
+<h3 id="q-why-use-this-instead-of-crewais-built-in-llms">Q: Why use this instead of CrewAI's built-in LLMs?</h3>
+<p><strong>A</strong>: This integration combines:
+- Mellea's structured generative programming approach
+- CrewAI's agent framework and tooling
+- Ability to use any Mellea backend with CrewAI
+- Requirements and validation capabilities</p>
+<h3 id="q-does-this-support-all-crewai-features">Q: Does this support all CrewAI features?</h3>
+<p><strong>A</strong>: It supports the core features: agents, tasks, crews, tools, and events. Some advanced features may have limitations.</p>
+<h3 id="q-can-i-use-melleas-advanced-features">Q: Can I use Mellea's advanced features?</h3>
+<p><strong>A</strong>: Yes! Configure your Mellea session with all desired features, then wrap it with <code>MelleaLLM</code>.</p>
+<h3 id="q-what-about-performance">Q: What about performance?</h3>
+<p><strong>A</strong>: The overhead is minimal. The wrapper primarily handles message format conversion and event emission.</p>
+<h3 id="q-which-mellea-backends-are-supported">Q: Which Mellea backends are supported?</h3>
+<p><strong>A</strong>: All Mellea backends work, including Ollama, OpenAI, WatsonX, HuggingFace, and custom backends.</p>
+<h2 id="acknowledgments">Acknowledgments</h2>
+<ul>
+<li><strong>Mellea Team</strong>: For creating the generative programming framework</li>
+<li><strong>CrewAI Team</strong>: For the powerful agent framework</li>
+<li><strong>Contributors</strong>: Everyone who helps improve this integration</li>
+</ul>
+<hr>
+<p><strong>Version</strong>: 0.1.0<br>
+<strong>Status</strong>: Alpha<br>
+<strong>Last Updated</strong>: 2026-02-12</p>
+  </div>
+
+  <h2>Metadata</h2>
+  <h3>Authors</h3>
+  <ul class="chip-list">
+<li>IBM Research &lt;mellea@ibm.com&gt;</li>  </ul>
+
+  <h3>Keywords</h3>
+  <ul class="chip-list">
+<li><code>mellea</code></li><li><code>crewai</code></li><li><code>llm</code></li><li><code>generative-programming</code></li><li><code>ai-agents</code></li>  </ul>
+
+  <h3>Project URLs</h3>
+  <ul>
+      <li>Homepage: <a href="https://github.com/generative-computing/mellea">https://github.com/generative-computing/mellea</a></li>
+      <li>Documentation: <a href="https://mellea.ai">https://mellea.ai</a></li>
+      <li>Repository: <a href="https://github.com/generative-computing/mellea">https://github.com/generative-computing/mellea</a></li>
+      <li>Issues: <a href="https://github.com/generative-computing/mellea/issues">https://github.com/generative-computing/mellea/issues</a></li>
+  </ul>
+
+  <details>
+    <summary>Classifiers (8)</summary>
+    <ul class="chip-list">
+<li><code>Development Status :: 3 - Alpha</code></li><li><code>Intended Audience :: Developers</code></li><li><code>License :: OSI Approved :: Apache Software License</code></li><li><code>Programming Language :: Python :: 3</code></li><li><code>Programming Language :: Python :: 3.10</code></li><li><code>Programming Language :: Python :: 3.11</code></li><li><code>Programming Language :: Python :: 3.12</code></li><li><code>Topic :: Scientific/Engineering :: Artificial Intelligence</code></li>    </ul>
+  </details>
+</article><article id="pkg-mellea-dspy" class="pane" role="tabpanel" hidden>
+  <h1><code>mellea-dspy</code></h1>
+  <p class="lede">DSPy integration for Mellea - enabling structured prompting with generative programming</p>
+
+  <p class="badges">
+      <a class="badge" href="https://github.com/generative-computing/mellea-contribs/releases/tag/mellea-dspy/v0.1.0">v0.1.0</a>
+<span class="badge muted">MIT License</span>  </p>
+
+  <h2>Install</h2>
+  <p>Install the latest release directly from its git tag:</p>
+  <pre><code>pip install &#34;git+https://github.com/generative-computing/mellea-contribs.git@mellea-dspy/v0.1.0#subdirectory=mellea_contribs/dspy_backend&#34;</code></pre>
+  <p class="muted">To pin a different version, swap the tag in the URL above (see version history below).</p>
+
+  <h2>Compatibility</h2>
+  <dl class="compat">
+    <dt><code>mellea</code></dt>
+    <dd><code>mellea&gt;=0.3.2</code></dd>
+    <dt>Python</dt>
+    <dd><code>&gt;=3.11</code></dd>
+  </dl>
+
+  <h3>Other dependencies</h3>
+  <ul class="chip-list">
+      <li><code>dspy&gt;=3.1.3</code></li>
+      <li><code>mellea-integration-core</code></li>
+  </ul>
+
+  <h2>Version history</h2>
+  <p class="muted">Each row's install command pins <code>pip</code> to that exact tag.</p>
+  <table class="version-history">
+    <thead>
+      <tr>
+        <th>Version</th>
+        <th>Released</th>
+        <th><code>mellea</code> constraint</th>
+        <th>Install</th>
+        <th>Release</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          v0.1.0
+        </td>
+        <td>2026-04-27</td>
+        <td><code>mellea&gt;=0.3.2</code></td>
+        <td><code class="install-snippet">pip install &#34;git+https://github.com/generative-computing/mellea-contribs.git@mellea-dspy/v0.1.0#subdirectory=mellea_contribs/dspy_backend&#34;</code></td>
+        <td><a href="https://github.com/generative-computing/mellea-contribs/releases/tag/mellea-dspy/v0.1.0">link</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>README</h2>
+  <div class="readme">
+  <h1 id="mellea-dspy-integration">Mellea + DSPy Integration</h1>
+<p>A powerful integration that combines <a href="https://mellea.ai/">Mellea</a>'s generative programming capabilities with <a href="https://github.com/stanfordnlp/dspy">DSPy</a>'s structured prompting framework.</p>
+<h2 id="overview">🌟 Overview</h2>
+<p>This integration enables you to use Mellea as a backend for DSPy, bringing together:</p>
+<ul>
+<li><strong>Mellea's Features:</strong></li>
+<li>Multi-model support (Ollama, OpenAI, Anthropic)</li>
+<li>Requirements validation</li>
+<li>Sampling strategies for inference-time scaling</li>
+<li>
+<p>Generative programming patterns</p>
+</li>
+<li>
+<p><strong>DSPy's Features:</strong></p>
+</li>
+<li>Structured prompting with signatures</li>
+<li>Modular program composition</li>
+<li>Automatic optimization</li>
+<li>Chain of thought reasoning</li>
+</ul>
+<h2 id="quick-start">🚀 Quick Start</h2>
+<h3 id="installation">Installation</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Install dependencies</span>
+uv<span class="w"> </span>add<span class="w"> </span>dspy
+
+<span class="c1"># Ensure Ollama is running</span>
+ollama<span class="w"> </span>pull<span class="w"> </span>granite4:micro
+</code></pre></div>
+
+<h3 id="basic-usage">Basic Usage</h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">dspy</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea</span><span class="w"> </span><span class="kn">import</span> <span class="n">start_session</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea_dspy</span><span class="w"> </span><span class="kn">import</span> <span class="n">MelleaLM</span>
+
+<span class="c1"># Create Mellea session</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">start_session</span><span class="p">()</span>
+
+<span class="c1"># Create DSPy LM with Mellea backend</span>
+<span class="n">lm</span> <span class="o">=</span> <span class="n">MelleaLM</span><span class="p">(</span><span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s2">&quot;mellea-ollama&quot;</span><span class="p">)</span>
+
+<span class="c1"># Configure DSPy</span>
+<span class="n">dspy</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">lm</span><span class="o">=</span><span class="n">lm</span><span class="p">)</span>
+
+<span class="c1"># Use with DSPy</span>
+<span class="n">qa</span> <span class="o">=</span> <span class="n">dspy</span><span class="o">.</span><span class="n">Predict</span><span class="p">(</span><span class="s2">&quot;question -&gt; answer&quot;</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">qa</span><span class="p">(</span><span class="n">question</span><span class="o">=</span><span class="s2">&quot;What is generative programming?&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">answer</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="examples">📚 Examples</h2>
+<p>We provide comprehensive examples demonstrating all aspects of the integration:</p>
+<h3 id="01-basic-usage"><a href="examples/01_basic_usage.py">01. Basic Usage</a></h3>
+<p>Learn the fundamentals:
+- Simple predictions
+- Chain of thought reasoning
+- Custom signatures
+- Multiple output fields</p>
+<div class="codehilite"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>examples/01_basic_usage.py
+</code></pre></div>
+
+<h3 id="02-requirements-validation"><a href="examples/02_requirements_validation.py">02. Requirements Validation</a></h3>
+<p>Ensure output quality:
+- Length constraints
+- Format requirements
+- Content validation
+- Combined requirements</p>
+<div class="codehilite"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>examples/02_requirements_validation.py
+</code></pre></div>
+
+<h3 id="03-sampling-strategies"><a href="examples/03_sampling_strategies.py">03. Sampling Strategies</a></h3>
+<p>Improve output quality:
+- Rejection sampling
+- Best-of-N sampling
+- Temperature control
+- Ensemble methods
+- Adaptive sampling</p>
+<div class="codehilite"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>examples/03_sampling_strategies.py
+</code></pre></div>
+
+<h3 id="04-async-operations"><a href="examples/04_async_operations.py">04. Async Operations</a></h3>
+<p>Optimize performance:
+- Concurrent generation
+- Batch processing
+- Async chain of thought
+- Error handling</p>
+<div class="codehilite"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>examples/04_async_operations.py
+</code></pre></div>
+
+<h3 id="05-dspy-modules"><a href="examples/05_dspy_modules.py">05. DSPy Modules</a></h3>
+<p>Build modular programs:
+- Simple modules
+- Multi-step reasoning
+- Module composition
+- Conditional logic
+- Stateful modules</p>
+<div class="codehilite"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>examples/05_dspy_modules.py
+</code></pre></div>
+
+<h3 id="06-optimization"><a href="examples/06_optimization.py">06. Optimization</a></h3>
+<p>Improve program performance:
+- Few-shot learning
+- Bootstrap optimization
+- Signature optimization
+- Metric-based optimization
+- Hyperparameter tuning</p>
+<div class="codehilite"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>examples/06_optimization.py
+<span class="c1">### [07. Ollama with Granite](examples/07_ollama_granite.py)</span>
+Configure<span class="w"> </span>specific<span class="w"> </span>models:
+-<span class="w"> </span>OllamaBackend<span class="w"> </span>setup
+-<span class="w"> </span>Custom<span class="w"> </span>model<span class="w"> </span>configuration
+-<span class="w"> </span>Backend<span class="w"> </span>vs<span class="w"> </span>model<span class="w"> </span>parameter
+
+<span class="sb">```</span>bash
+uv<span class="w"> </span>run<span class="w"> </span>examples/07_ollama_granite.py
+</code></pre></div>
+
+<h3 id="08-bestofn-verification-new"><a href="examples/08_bestofn_verification.py">08. BestOfN Verification</a> ⭐ NEW</h3>
+<p>Runtime verification with BestOfN:
+- Generate N candidates, select best
+- Automatic requirement-to-reward conversion
+- Multiple requirement types
+- Custom callable requirements
+- Combination strategies</p>
+<div class="codehilite"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>examples/08_bestofn_verification.py
+</code></pre></div>
+
+<h3 id="09-refine-verification-new"><a href="examples/09_refine_verification.py">09. Refine Verification</a> ⭐ NEW</h3>
+<p>Iterative refinement with requirements:
+- Iterative output improvement
+- Requirement-guided refinement
+- Quality-focused strategies
+- Custom refinement criteria
+- Comparison with BestOfN</p>
+<div class="codehilite"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>examples/09_refine_verification.py
+</code></pre></div>
+
+<h3 id="10-hybrid-approach-new"><a href="examples/10_hybrid_approach.py">10. Hybrid Approach</a> ⭐ NEW</h3>
+<p>Two ways to use Mellea requirements with DSPy:
+- High-level wrappers (MelleaBestOfN, MelleaRefine)
+- Direct DSPy with create_reward_fn()
+- Side-by-side comparisons
+- When to use each approach</p>
+<div class="codehilite"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>examples/10_hybrid_approach.py
+</code></pre></div>
+
+<h3 id="runtime-verification-with-bestofn-and-refine-new">Runtime Verification with BestOfN and Refine ⭐ NEW</h3>
+<p>Two approaches for using Mellea requirements with DSPy verification:</p>
+<p><strong>Approach 1: High-Level Wrappers (Recommended)</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">mellea_dspy</span><span class="w"> </span><span class="kn">import</span> <span class="n">MelleaBestOfN</span><span class="p">,</span> <span class="n">MelleaRefine</span>
+
+<span class="c1"># BestOfN: Generate N candidates, select best</span>
+<span class="n">qa</span> <span class="o">=</span> <span class="n">dspy</span><span class="o">.</span><span class="n">Predict</span><span class="p">(</span><span class="s2">&quot;question -&gt; answer&quot;</span><span class="p">)</span>
+<span class="n">best_of_5</span> <span class="o">=</span> <span class="n">MelleaBestOfN</span><span class="p">(</span>
+    <span class="n">module</span><span class="o">=</span><span class="n">qa</span><span class="p">,</span>
+    <span class="n">N</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="n">requirements</span><span class="o">=</span><span class="p">[</span>
+        <span class="s2">&quot;Must be one word&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Must be a proper noun&quot;</span>
+    <span class="p">],</span>
+    <span class="n">threshold</span><span class="o">=</span><span class="mf">0.8</span>
+<span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">best_of_5</span><span class="p">(</span><span class="n">question</span><span class="o">=</span><span class="s2">&quot;What is the capital of Belgium?&quot;</span><span class="p">)</span>
+<span class="c1"># Returns: &quot;Brussels&quot;</span>
+
+<span class="c1"># Refine: Iteratively improve output</span>
+<span class="n">refiner</span> <span class="o">=</span> <span class="n">MelleaRefine</span><span class="p">(</span>
+    <span class="n">module</span><span class="o">=</span><span class="n">qa</span><span class="p">,</span>
+    <span class="n">N</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+    <span class="n">requirements</span><span class="o">=</span><span class="p">[</span>
+        <span class="s2">&quot;Must be under 50 words&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Must be professional&quot;</span>
+    <span class="p">],</span>
+    <span class="n">threshold</span><span class="o">=</span><span class="mf">0.9</span>
+<span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">refiner</span><span class="p">(</span><span class="n">question</span><span class="o">=</span><span class="s2">&quot;What is Python?&quot;</span><span class="p">)</span>
+<span class="c1"># Iteratively refines until requirements are met</span>
+</code></pre></div>
+
+<p><strong>Approach 2: Direct DSPy with create_reward_fn() (Advanced)</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">dspy</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea_dspy</span><span class="w"> </span><span class="kn">import</span> <span class="n">create_reward_fn</span>
+
+<span class="c1"># Create reward function from requirements</span>
+<span class="n">reward_fn</span> <span class="o">=</span> <span class="n">create_reward_fn</span><span class="p">(</span>
+    <span class="n">requirements</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Must be one word&quot;</span><span class="p">,</span> <span class="s2">&quot;Must be a proper noun&quot;</span><span class="p">],</span>
+    <span class="n">strategy</span><span class="o">=</span><span class="s2">&quot;average&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># Use with native DSPy</span>
+<span class="n">qa</span> <span class="o">=</span> <span class="n">dspy</span><span class="o">.</span><span class="n">Predict</span><span class="p">(</span><span class="s2">&quot;question -&gt; answer&quot;</span><span class="p">)</span>
+<span class="n">best_of_5</span> <span class="o">=</span> <span class="n">dspy</span><span class="o">.</span><span class="n">BestOfN</span><span class="p">(</span>
+    <span class="n">module</span><span class="o">=</span><span class="n">qa</span><span class="p">,</span>
+    <span class="n">N</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="n">reward_fn</span><span class="o">=</span><span class="n">reward_fn</span><span class="p">,</span>
+    <span class="n">threshold</span><span class="o">=</span><span class="mf">0.8</span>
+<span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">best_of_5</span><span class="p">(</span><span class="n">question</span><span class="o">=</span><span class="s2">&quot;What is the capital of Belgium?&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>When to Use Each Approach:</strong>
+- <strong>Wrappers</strong>: Simple API, Mellea-native, recommended for most users
+- <strong>Direct DSPy</strong>: Advanced customization, fine-grained control, complex pipelines</p>
+<p><strong>Key Features:</strong>
+- Automatic requirement-to-reward conversion
+- Support for string and callable requirements
+- Multiple combination strategies (average, min, product)
+- Configurable thresholds and iterations
+- Works with any DSPy module</p>
+<p><strong>Requirement Types:</strong>
+- Length constraints: "Must be under 50 words"
+- Content checks: "Must mention AI"
+- Format requirements: "Must be in bullet points"
+- Quality criteria: "Must be professional"
+- Custom callables: <code>lambda args, pred: len(pred.answer) &lt; 100</code></p>
+<p><strong>See <a href="examples/README.md">examples/README.md</a> for detailed documentation.</strong></p>
+<h2 id="key-features">🎯 Key Features</h2>
+<h3 id="seamless-integration">Seamless Integration</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Works with all DSPy modules</span>
+<span class="n">predictor</span> <span class="o">=</span> <span class="n">dspy</span><span class="o">.</span><span class="n">Predict</span><span class="p">(</span><span class="s2">&quot;input -&gt; output&quot;</span><span class="p">)</span>
+<span class="n">cot</span> <span class="o">=</span> <span class="n">dspy</span><span class="o">.</span><span class="n">ChainOfThought</span><span class="p">(</span><span class="s2">&quot;question -&gt; answer&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="requirements-validation">Requirements Validation</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Use Mellea&#39;s validation (through instruct method)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">lm</span><span class="p">(</span>
+    <span class="n">prompt</span><span class="o">=</span><span class="s2">&quot;Generate a summary&quot;</span><span class="p">,</span>
+    <span class="n">requirements</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Must be under 100 words&quot;</span><span class="p">,</span> <span class="s2">&quot;Must mention key points&quot;</span><span class="p">],</span>
+    <span class="n">model_options</span><span class="o">=</span><span class="p">{}</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h3 id="async-support">Async Support</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Async generation for better performance</span>
+<span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">lm</span><span class="o">.</span><span class="n">aforward</span><span class="p">(</span>
+    <span class="n">prompt</span><span class="o">=</span><span class="s2">&quot;Generate response&quot;</span><span class="p">,</span>
+    <span class="n">model_options</span><span class="o">=</span><span class="p">{}</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h3 id="multi-model-support">Multi-Model Support</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Use different backends</span>
+<span class="n">lm_ollama</span> <span class="o">=</span> <span class="n">MelleaLM</span><span class="p">(</span><span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s2">&quot;mellea-ollama&quot;</span><span class="p">)</span>
+<span class="n">lm_openai</span> <span class="o">=</span> <span class="n">MelleaLM</span><span class="p">(</span><span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s2">&quot;mellea-openai&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="documentation">📖 Documentation</h2>
+<ul>
+<li><strong><a href="README_MELLEA_DSPY.md">Integration Guide</a></strong> - Detailed integration documentation</li>
+<li><strong><a href="examples/README.md">Examples README</a></strong> - Comprehensive examples guide</li>
+<li><strong><a href="mellea_lm.py">API Reference</a></strong> - MelleaLM class documentation</li>
+</ul>
+<h2 id="architecture">🏗️ Architecture</h2>
+<div class="codehilite"><pre><span></span><code>DSPy Application
+       ↓
+   MelleaLM (dspy.BaseLM)
+       ↓
+  Mellea Session
+       ↓
+  Model Backend (Ollama/OpenAI/Anthropic)
+</code></pre></div>
+
+<p>The <code>MelleaLM</code> class implements DSPy's <code>BaseLM</code> interface, translating between DSPy's expectations and Mellea's capabilities.</p>
+<h2 id="configuration">🔧 Configuration</h2>
+<h3 id="model-options">Model Options</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">lm</span> <span class="o">=</span> <span class="n">MelleaLM</span><span class="p">(</span>
+    <span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">,</span>
+    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;mellea-ollama&quot;</span><span class="p">,</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
+    <span class="n">max_tokens</span><span class="o">=</span><span class="mi">2000</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h3 id="mellea-session">Mellea Session</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Default (Ollama)</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">start_session</span><span class="p">()</span>
+
+<span class="c1"># With specific backend</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">start_session</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="s2">&quot;openai&quot;</span><span class="p">)</span>
+
+<span class="c1"># With custom options</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">start_session</span><span class="p">(</span>
+    <span class="n">backend</span><span class="o">=</span><span class="s2">&quot;ollama&quot;</span><span class="p">,</span>
+    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;granite4:micro&quot;</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="learning-path">🎓 Learning Path</h2>
+<ol>
+<li><strong>Start Here:</strong> <a href="examples/01_basic_usage.py">Basic Usage</a></li>
+<li><strong>Quality Control:</strong> <a href="examples/02_requirements_validation.py">Requirements Validation</a></li>
+<li><strong>Better Outputs:</strong> <a href="examples/03_sampling_strategies.py">Sampling Strategies</a></li>
+<li><strong>Performance:</strong> <a href="examples/04_async_operations.py">Async Operations</a></li>
+<li><strong>Modularity:</strong> <a href="examples/05_dspy_modules.py">DSPy Modules</a></li>
+<li><strong>Optimization:</strong> <a href="examples/06_optimization.py">Optimization</a></li>
+</ol>
+<h2 id="testing">🧪 Testing</h2>
+<p>Run the test suite:</p>
+<div class="codehilite"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>test_mellea_dspy.py
+</code></pre></div>
+
+<p>Run the original comprehensive example:</p>
+<div class="codehilite"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>example_mellea_dspy.py
+</code></pre></div>
+
+<h2 id="use-cases">💡 Use Cases</h2>
+<h3 id="question-answering">Question Answering</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">qa</span> <span class="o">=</span> <span class="n">dspy</span><span class="o">.</span><span class="n">ChainOfThought</span><span class="p">(</span><span class="s2">&quot;question -&gt; answer&quot;</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">qa</span><span class="p">(</span><span class="n">question</span><span class="o">=</span><span class="s2">&quot;What is Mellea?&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="text-classification">Text Classification</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">classifier</span> <span class="o">=</span> <span class="n">dspy</span><span class="o">.</span><span class="n">Predict</span><span class="p">(</span><span class="s2">&quot;text -&gt; category&quot;</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">classifier</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;AI article content&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="summarization">Summarization</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">summarizer</span> <span class="o">=</span> <span class="n">dspy</span><span class="o">.</span><span class="n">Predict</span><span class="p">(</span><span class="s2">&quot;text -&gt; summary&quot;</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">summarizer</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;Long article...&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="code-generation">Code Generation</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">coder</span> <span class="o">=</span> <span class="n">dspy</span><span class="o">.</span><span class="n">Predict</span><span class="p">(</span><span class="s2">&quot;task -&gt; code&quot;</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">coder</span><span class="p">(</span><span class="n">task</span><span class="o">=</span><span class="s2">&quot;Write a factorial function&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="comparison-with-other-integrations">🔄 Comparison with Other Integrations</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>LangChain</th>
+<th>DSPy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interface</td>
+<td><code>BaseChatModel</code></td>
+<td><code>BaseLM</code></td>
+</tr>
+<tr>
+<td>Primary Use</td>
+<td>Chains &amp; agents</td>
+<td>Structured prompting</td>
+</tr>
+<tr>
+<td>Optimization</td>
+<td>Manual</td>
+<td>Built-in</td>
+</tr>
+<tr>
+<td>Modularity</td>
+<td>High</td>
+<td>Very High</td>
+</tr>
+<tr>
+<td>Learning Curve</td>
+<td>Moderate</td>
+<td>Moderate</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contributing">🤝 Contributing</h2>
+<p>Contributions welcome! To add examples or improve the integration:</p>
+<ol>
+<li>Create new examples in <code>examples/</code></li>
+<li>Follow existing patterns and structure</li>
+<li>Update documentation</li>
+<li>Test thoroughly</li>
+<li>Submit a pull request</li>
+</ol>
+<h2 id="resources">📚 Resources</h2>
+<ul>
+<li><a href="https://mellea.ai/">Mellea Documentation</a></li>
+<li><a href="https://dspy-docs.vercel.app/">DSPy Documentation</a></li>
+<li><a href="https://github.com/stanfordnlp/dspy">DSPy GitHub</a></li>
+<li><a href="https://github.com/generative-computing/mellea">Mellea GitHub</a></li>
+</ul>
+<h2 id="troubleshooting">🐛 Troubleshooting</h2>
+<h3 id="common-issues">Common Issues</h3>
+<p><strong>Connection Error:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Ensure Ollama is running</span>
+ollama<span class="w"> </span>serve
+</code></pre></div>
+
+<p><strong>Model Not Found:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Pull the model</span>
+ollama<span class="w"> </span>pull<span class="w"> </span>granite4:micro
+</code></pre></div>
+
+<p><strong>Import Error:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Install dependencies</span>
+uv<span class="w"> </span>sync
+</code></pre></div>
+
+<p>See <a href="examples/README.md">examples/README.md</a> for more troubleshooting tips.</p>
+<h2 id="license">📄 License</h2>
+<p>This integration follows the same license as the parent project.</p>
+<hr>
+<p><strong>Built with ❤️ using Mellea and DSPy</strong></p>
+  </div>
+
+  <h2>Metadata</h2>
+  <h3>Authors</h3>
+  <ul class="chip-list">
+<li>Mellea Contributors</li>  </ul>
+
+  <h3>Keywords</h3>
+  <ul class="chip-list">
+<li><code>mellea</code></li><li><code>dspy</code></li><li><code>llm</code></li><li><code>generative-programming</code></li><li><code>structured-prompting</code></li>  </ul>
+
+  <h3>Project URLs</h3>
+  <ul>
+      <li>Homepage: <a href="https://github.com/generative-computing/mellea">https://github.com/generative-computing/mellea</a></li>
+      <li>Documentation: <a href="https://mellea.ai/">https://mellea.ai/</a></li>
+      <li>Repository: <a href="https://github.com/generative-computing/mellea-contribs">https://github.com/generative-computing/mellea-contribs</a></li>
+  </ul>
+
+  <details>
+    <summary>Classifiers (8)</summary>
+    <ul class="chip-list">
+<li><code>Development Status :: 3 - Alpha</code></li><li><code>Intended Audience :: Developers</code></li><li><code>License :: OSI Approved :: MIT License</code></li><li><code>Programming Language :: Python :: 3</code></li><li><code>Programming Language :: Python :: 3.10</code></li><li><code>Programming Language :: Python :: 3.11</code></li><li><code>Programming Language :: Python :: 3.12</code></li><li><code>Programming Language :: Python :: 3.13</code></li>    </ul>
+  </details>
+</article><article id="pkg-mellea-integration-core" class="pane" role="tabpanel" hidden>
+  <h1><code>mellea-integration-core</code></h1>
+  <p class="lede">Core abstractions for Mellea framework integrations</p>
+
+  <p class="badges">
+      <a class="badge" href="https://github.com/generative-computing/mellea-contribs/releases/tag/mellea-integration-core/v0.1.0">v0.1.0</a>
+<span class="badge muted">Apache-2.0</span>  </p>
+
+  <h2>Install</h2>
+  <p>Install the latest release directly from its git tag:</p>
+  <pre><code>pip install &#34;git+https://github.com/generative-computing/mellea-contribs.git@mellea-integration-core/v0.1.0#subdirectory=mellea_contribs/mellea-integration-core&#34;</code></pre>
+  <p class="muted">To pin a different version, swap the tag in the URL above (see version history below).</p>
+
+  <h2>Compatibility</h2>
+  <dl class="compat">
+    <dt><code>mellea</code></dt>
+    <dd><code>mellea&gt;=0.3.2</code></dd>
+    <dt>Python</dt>
+    <dd><code>&gt;=3.11</code></dd>
+  </dl>
+
+
+  <h2>Version history</h2>
+  <p class="muted">Each row's install command pins <code>pip</code> to that exact tag.</p>
+  <table class="version-history">
+    <thead>
+      <tr>
+        <th>Version</th>
+        <th>Released</th>
+        <th><code>mellea</code> constraint</th>
+        <th>Install</th>
+        <th>Release</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          v0.1.0
+        </td>
+        <td>2026-04-27</td>
+        <td><code>mellea&gt;=0.3.2</code></td>
+        <td><code class="install-snippet">pip install &#34;git+https://github.com/generative-computing/mellea-contribs.git@mellea-integration-core/v0.1.0#subdirectory=mellea_contribs/mellea-integration-core&#34;</code></td>
+        <td><a href="https://github.com/generative-computing/mellea-contribs/releases/tag/mellea-integration-core/v0.1.0">link</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>README</h2>
+  <div class="readme">
+  <h1 id="mellea-integration-core">Mellea Integration Core</h1>
+<p>Core abstractions and utilities for building clean, maintainable integrations between Mellea and various AI frameworks (LangChain, CrewAI, DSPy, etc.).</p>
+<h2 id="overview">Overview</h2>
+<p>This package provides a <strong>hybrid approach</strong> to framework integration:
+- <strong>Core abstractions</strong> for common patterns (message conversion, tool handling, session management)
+- <strong>Framework-specific extensions</strong> for customization and framework-specific features
+- <strong>Reduced code duplication</strong> across integrations by extracting common patterns
+- <strong>Consistent behavior</strong> across all framework integrations</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>✅ <strong>Base Integration Class</strong>: Common patterns for all framework adapters</li>
+<li>✅ <strong>Message Conversion</strong>: Utilities for converting between framework and Mellea formats</li>
+<li>✅ <strong>Tool Conversion</strong>: Utilities for handling tool calling across frameworks</li>
+<li>✅ <strong>Requirements Support</strong>: Built-in support for Mellea's validation features</li>
+<li>✅ <strong>Async Support</strong>: Both sync and async generation patterns</li>
+<li>✅ <strong>Type Safety</strong>: Protocol-based design with type hints (note: some <code>Any</code> types used for framework flexibility)</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mellea-integration-core
+</code></pre></div>
+
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="creating-a-framework-integration">Creating a Framework Integration</h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">mellea_integration</span><span class="w"> </span><span class="kn">import</span> <span class="n">MelleaIntegrationBase</span><span class="p">,</span> <span class="n">BaseMessageConverter</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Any</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MyFrameworkMessageConverter</span><span class="p">(</span><span class="n">BaseMessageConverter</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Convert MyFramework messages to/from Mellea format.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">to_mellea</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">messages</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Any</span><span class="p">]:</span>
+        <span class="c1"># Convert framework messages to Mellea Message objects</span>
+        <span class="n">mellea_messages</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="n">messages</span><span class="p">:</span>
+            <span class="n">mellea_messages</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">create_mellea_message</span><span class="p">(</span>
+                    <span class="n">role</span><span class="o">=</span><span class="n">msg</span><span class="o">.</span><span class="n">role</span><span class="p">,</span>
+                    <span class="n">content</span><span class="o">=</span><span class="n">msg</span><span class="o">.</span><span class="n">content</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="n">mellea_messages</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">from_mellea</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="c1"># Convert Mellea response to framework format</span>
+        <span class="n">content</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">extract_content_from_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">MyFrameworkResponse</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="n">content</span><span class="p">)</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MyFrameworkAdapter</span><span class="p">(</span><span class="n">MelleaIntegrationBase</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Adapter for MyFramework using Mellea.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mellea_session</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">mellea_session</span><span class="o">=</span><span class="n">mellea_session</span><span class="p">,</span>
+            <span class="n">message_converter</span><span class="o">=</span><span class="n">MyFrameworkMessageConverter</span><span class="p">(),</span>
+            <span class="o">**</span><span class="n">kwargs</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">generate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">messages</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="c1"># Prepare inputs</span>
+        <span class="n">prompt</span><span class="p">,</span> <span class="n">model_options</span><span class="p">,</span> <span class="n">tool_calls_enabled</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prepare_generation</span><span class="p">(</span>
+            <span class="n">messages</span><span class="p">,</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;tools&quot;</span><span class="p">),</span> <span class="o">**</span><span class="n">kwargs</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Generate with Mellea</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_generate_with_mellea</span><span class="p">(</span>
+            <span class="n">prompt</span><span class="p">,</span> <span class="n">model_options</span><span class="p">,</span> <span class="n">tool_calls_enabled</span><span class="p">,</span>
+            <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;requirements&quot;</span><span class="p">),</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;strategy&quot;</span><span class="p">)</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Convert response</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">message_converter</span><span class="o">.</span><span class="n">from_mellea</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">agenerate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">messages</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+        <span class="c1"># Async version</span>
+        <span class="n">prompt</span><span class="p">,</span> <span class="n">model_options</span><span class="p">,</span> <span class="n">tool_calls_enabled</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prepare_generation</span><span class="p">(</span>
+            <span class="n">messages</span><span class="p">,</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;tools&quot;</span><span class="p">),</span> <span class="o">**</span><span class="n">kwargs</span>
+        <span class="p">)</span>
+
+        <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_agenerate_with_mellea</span><span class="p">(</span>
+            <span class="n">prompt</span><span class="p">,</span> <span class="n">model_options</span><span class="p">,</span> <span class="n">tool_calls_enabled</span><span class="p">,</span>
+            <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;requirements&quot;</span><span class="p">),</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;strategy&quot;</span><span class="p">)</span>
+        <span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">message_converter</span><span class="o">.</span><span class="n">from_mellea</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="architecture">Architecture</h2>
+<div class="codehilite"><pre><span></span><code>┌─────────────────────────────────────────┐
+│     Framework Application               │
+│  (LangChain, CrewAI, DSPy, etc.)       │
+└──────────────┬──────────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────────┐
+│   Framework-Specific Adapter            │
+│   (Inherits MelleaIntegrationBase)      │
+│   • Custom message conversion           │
+│   • Framework-specific features         │
+│   • Event/callback handling             │
+└──────────────┬──────────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────────┐
+│   MelleaIntegrationBase                 │
+│   • Message preparation                 │
+│   • Tool handling                       │
+│   • Session management                  │
+│   • Requirements/strategy support       │
+└──────────────┬──────────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────────┐
+│        Mellea Session                   │
+│   (chat, instruct, achat, ainstruct)    │
+└─────────────────────────────────────────┘
+</code></pre></div>
+
+<h2 id="core-components">Core Components</h2>
+<h3 id="melleaintegrationbase">MelleaIntegrationBase</h3>
+<p>Base class providing common functionality:</p>
+<ul>
+<li><strong><code>_prepare_generation()</code></strong>: Convert messages and tools, prepare model options</li>
+<li><strong><code>_generate_with_mellea()</code></strong>: Choose between chat() and instruct() methods</li>
+<li><strong><code>_agenerate_with_mellea()</code></strong>: Async version of generation</li>
+<li><strong><code>_handle_sampling_results()</code></strong>: Extract results from validation</li>
+</ul>
+<h3 id="basemessageconverter">BaseMessageConverter</h3>
+<p>Utilities for message conversion:</p>
+<ul>
+<li><strong><code>extract_last_user_message()</code></strong>: Get the last user message content</li>
+<li><strong><code>create_mellea_message()</code></strong>: Create Mellea Message with validation</li>
+<li><strong><code>normalize_content()</code></strong>: Normalize various content formats to string</li>
+<li><strong><code>extract_content_from_response()</code></strong>: Extract text from Mellea response</li>
+</ul>
+<h3 id="basetoolconverter">BaseToolConverter</h3>
+<p>Utilities for tool conversion:</p>
+<ul>
+<li><strong><code>extract_tool_schema()</code></strong>: Get JSON schema from tool object</li>
+<li><strong><code>get_tool_callable()</code></strong>: Extract callable function from tool</li>
+<li><strong><code>parse_tool_calls_from_string()</code></strong>: Parse tool calls from string representation</li>
+<li><strong><code>extract_tool_calls_from_response()</code></strong>: Extract tool calls from Mellea response</li>
+</ul>
+<h2 id="usage-examples">Usage Examples</h2>
+<h3 id="basic-integration">Basic Integration</h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">mellea</span><span class="w"> </span><span class="kn">import</span> <span class="n">start_session</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea_integration</span><span class="w"> </span><span class="kn">import</span> <span class="n">MelleaIntegrationBase</span>
+
+<span class="c1"># Create Mellea session</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">start_session</span><span class="p">()</span>
+
+<span class="c1"># Create adapter (framework-specific)</span>
+<span class="n">adapter</span> <span class="o">=</span> <span class="n">MyFrameworkAdapter</span><span class="p">(</span><span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">)</span>
+
+<span class="c1"># Generate</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">adapter</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">messages</span><span class="o">=</span><span class="p">[</span><span class="o">...</span><span class="p">])</span>
+</code></pre></div>
+
+<h3 id="with-requirements">With Requirements</h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">mellea.stdlib.requirements</span><span class="w"> </span><span class="kn">import</span> <span class="n">req</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea.stdlib.sampling</span><span class="w"> </span><span class="kn">import</span> <span class="n">RejectionSamplingStrategy</span>
+
+<span class="n">adapter</span> <span class="o">=</span> <span class="n">MyFrameworkAdapter</span><span class="p">(</span>
+    <span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">,</span>
+    <span class="n">requirements</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">req</span><span class="p">(</span><span class="s2">&quot;Response must be professional&quot;</span><span class="p">),</span>
+        <span class="n">req</span><span class="p">(</span><span class="s2">&quot;Include specific examples&quot;</span><span class="p">)</span>
+    <span class="p">],</span>
+    <span class="n">strategy</span><span class="o">=</span><span class="n">RejectionSamplingStrategy</span><span class="p">(</span><span class="n">loop_budget</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">adapter</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">messages</span><span class="o">=</span><span class="p">[</span><span class="o">...</span><span class="p">])</span>
+</code></pre></div>
+
+<h3 id="with-tools">With Tools</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Tools are automatically converted</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">adapter</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span>
+    <span class="n">messages</span><span class="o">=</span><span class="p">[</span><span class="o">...</span><span class="p">],</span>
+    <span class="n">tools</span><span class="o">=</span><span class="p">[</span><span class="n">tool1</span><span class="p">,</span> <span class="n">tool2</span><span class="p">]</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="benefits">Benefits</h2>
+<h3 id="code-reduction">Code Reduction</h3>
+<ul>
+<li>Significant reduction in duplicated code across integrations</li>
+<li>Shared message/tool conversion logic</li>
+<li>Common Mellea session management</li>
+</ul>
+<h3 id="maintainability">Maintainability</h3>
+<ul>
+<li>Single source of truth for core patterns</li>
+<li>Bug fixes propagate to all integrations</li>
+<li>Easier to add new framework integrations</li>
+</ul>
+<h3 id="consistency">Consistency</h3>
+<ul>
+<li>Uniform behavior across frameworks</li>
+<li>Consistent requirements/strategy handling</li>
+<li>Standardized error handling</li>
+</ul>
+<h3 id="extensibility">Extensibility</h3>
+<ul>
+<li>Easy to add new frameworks</li>
+<li>Framework-specific customization preserved</li>
+<li>Protocol-based design allows flexibility</li>
+</ul>
+<h2 id="existing-integrations">Existing Integrations</h2>
+<p>This core package is designed to be used by framework integrations such as:</p>
+<ul>
+<li><strong>mellea-langchain</strong>: LangChain integration (in development)</li>
+<li><strong>mellea-crewai</strong>: CrewAI integration (in development)</li>
+<li><strong>mellea-dspy</strong>: DSPy integration (in development)</li>
+</ul>
+<h2 id="development">Development</h2>
+<h3 id="setup">Setup</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Install in development mode</span>
+pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;.[dev]&quot;</span>
+</code></pre></div>
+
+<h3 id="running-tests">Running Tests</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Run all tests</span>
+pytest
+
+<span class="c1"># Run with coverage</span>
+pytest<span class="w"> </span>--cov<span class="o">=</span>mellea_integration<span class="w"> </span>--cov-report<span class="o">=</span>html
+</code></pre></div>
+
+<h3 id="code-quality">Code Quality</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Format code</span>
+ruff<span class="w"> </span>format<span class="w"> </span>.
+
+<span class="c1"># Lint code</span>
+ruff<span class="w"> </span>check<span class="w"> </span>.
+
+<span class="c1"># Type checking</span>
+mypy<span class="w"> </span>src/mellea_integration
+</code></pre></div>
+
+<h2 id="contributing">Contributing</h2>
+<p>Contributions welcome! To add features or improve the core:</p>
+<ol>
+<li>Create a feature branch</li>
+<li>Add tests for new functionality</li>
+<li>Update documentation</li>
+<li>Submit a pull request</li>
+</ol>
+<h2 id="license">License</h2>
+<p>Apache License 2.0 - see LICENSE file for details.</p>
+<h2 id="support">Support</h2>
+<ul>
+<li><strong>Issues</strong>: Report bugs on GitHub Issues</li>
+<li><strong>Discord</strong>: Join the Mellea Discord</li>
+<li><strong>Documentation</strong>: Visit mellea.ai</li>
+</ul>
+<hr>
+<p><strong>Version</strong>: 0.1.0<br>
+<strong>Status</strong>: Alpha<br>
+<strong>Built with ❤️ for the Mellea community</strong></p>
+  </div>
+
+  <h2>Metadata</h2>
+  <h3>Authors</h3>
+  <ul class="chip-list">
+<li>Mellea Contributors</li>  </ul>
+
+  <h3>Keywords</h3>
+  <ul class="chip-list">
+<li><code>mellea</code></li><li><code>llm</code></li><li><code>integration</code></li><li><code>abstraction</code></li>  </ul>
+
+
+  <details>
+    <summary>Classifiers (6)</summary>
+    <ul class="chip-list">
+<li><code>Development Status :: 3 - Alpha</code></li><li><code>Intended Audience :: Developers</code></li><li><code>License :: OSI Approved :: Apache Software License</code></li><li><code>Programming Language :: Python :: 3</code></li><li><code>Programming Language :: Python :: 3.11</code></li><li><code>Programming Language :: Python :: 3.12</code></li>    </ul>
+  </details>
+</article><article id="pkg-mellea-langchain" class="pane" role="tabpanel" hidden>
+  <h1><code>mellea-langchain</code></h1>
+  <p class="lede">LangChain-compatible chat model that wraps Mellea</p>
+
+  <p class="badges">
+      <a class="badge" href="https://github.com/generative-computing/mellea-contribs/releases/tag/mellea-langchain/v0.1.0">v0.1.0</a>
+<span class="badge muted">Apache Software License</span>  </p>
+
+  <h2>Install</h2>
+  <p>Install the latest release directly from its git tag:</p>
+  <pre><code>pip install &#34;git+https://github.com/generative-computing/mellea-contribs.git@mellea-langchain/v0.1.0#subdirectory=mellea_contribs/langchain_backend&#34;</code></pre>
+  <p class="muted">To pin a different version, swap the tag in the URL above (see version history below).</p>
+
+  <h2>Compatibility</h2>
+  <dl class="compat">
+    <dt><code>mellea</code></dt>
+    <dd><code>mellea&gt;=0.3.2</code></dd>
+    <dt>Python</dt>
+    <dd><code>&gt;=3.11</code></dd>
+  </dl>
+
+  <h3>Other dependencies</h3>
+  <ul class="chip-list">
+      <li><code>mellea-integration-core</code></li>
+      <li><code>langchain-core&gt;=0.3.2</code></li>
+      <li><code>pydantic&gt;=2.0.0</code></li>
+  </ul>
+
+  <h2>Version history</h2>
+  <p class="muted">Each row's install command pins <code>pip</code> to that exact tag.</p>
+  <table class="version-history">
+    <thead>
+      <tr>
+        <th>Version</th>
+        <th>Released</th>
+        <th><code>mellea</code> constraint</th>
+        <th>Install</th>
+        <th>Release</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          v0.1.0
+        </td>
+        <td>2026-04-27</td>
+        <td><code>mellea&gt;=0.3.2</code></td>
+        <td><code class="install-snippet">pip install &#34;git+https://github.com/generative-computing/mellea-contribs.git@mellea-langchain/v0.1.0#subdirectory=mellea_contribs/langchain_backend&#34;</code></td>
+        <td><a href="https://github.com/generative-computing/mellea-contribs/releases/tag/mellea-langchain/v0.1.0">link</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>README</h2>
+  <div class="readme">
+  <h1 id="mellea-chat-model-for-langchain">Mellea Chat Model for LangChain</h1>
+<p>A LangChain-compatible chat model that wraps Mellea, enabling LangChain applications to use Mellea's generative programming capabilities as a standard chat model.</p>
+<h2 id="overview">Overview</h2>
+<p>This integration allows LangChain users to leverage Mellea's structured approach to generative programming while using familiar LangChain APIs. It provides full support for:</p>
+<ul>
+<li>✅ <strong>Chat Completion</strong>: Standard synchronous and asynchronous generation</li>
+<li>✅ <strong>Requirements &amp; Validation</strong>: Mellea's requirements and sampling strategies</li>
+<li>✅ <strong>Tool Calling</strong>: Function calling with LangChain agents</li>
+<li>✅ <strong>Chains</strong>: Integration with LangChain chains</li>
+<li>✅ <strong>Agents</strong>: Support for LangChain agents</li>
+<li>✅ <strong>Output Parsers &amp; Guardrails</strong>: Validate outputs with Mellea requirements</li>
+</ul>
+<p><strong>Note</strong>: Streaming is not currently supported. The <code>stream()</code> and <code>astream()</code> methods will return the full response as a single chunk.</p>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="installation">Installation</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Install from PyPI (once published)</span>
+pip<span class="w"> </span>install<span class="w"> </span>mellea-langchain
+
+<span class="c1"># Or install from source</span>
+<span class="nb">cd</span><span class="w"> </span>langchain
+pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+</code></pre></div>
+
+<h3 id="basic-usage">Basic Usage</h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">mellea</span><span class="w"> </span><span class="kn">import</span> <span class="n">start_session</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea_langchain</span><span class="w"> </span><span class="kn">import</span> <span class="n">MelleaChatModel</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_core.messages</span><span class="w"> </span><span class="kn">import</span> <span class="n">HumanMessage</span>
+
+<span class="c1"># Create Mellea session (with any backend)</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">start_session</span><span class="p">()</span>  <span class="c1"># Uses Ollama by default</span>
+
+<span class="c1"># Create LangChain chat model</span>
+<span class="n">chat_model</span> <span class="o">=</span> <span class="n">MelleaChatModel</span><span class="p">(</span><span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">)</span>
+
+<span class="c1"># Use like any LangChain chat model</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">chat_model</span><span class="o">.</span><span class="n">invoke</span><span class="p">([</span>
+    <span class="n">HumanMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;What is generative programming?&quot;</span><span class="p">)</span>
+<span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="using-with-different-mellea-backends">Using with Different Mellea Backends</h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">mellea</span><span class="w"> </span><span class="kn">import</span> <span class="n">MelleaSession</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea.backends.openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAIBackend</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea.backends.ollama</span><span class="w"> </span><span class="kn">import</span> <span class="n">OllamaModelBackend</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea_langchain</span><span class="w"> </span><span class="kn">import</span> <span class="n">MelleaChatModel</span>
+
+<span class="c1"># Option 1: OpenAI backend</span>
+<span class="n">openai_backend</span> <span class="o">=</span> <span class="n">OpenAIBackend</span><span class="p">(</span><span class="n">model_id</span><span class="o">=</span><span class="s2">&quot;gpt-4&quot;</span><span class="p">)</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">MelleaSession</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="n">openai_backend</span><span class="p">)</span>
+<span class="n">chat_model</span> <span class="o">=</span> <span class="n">MelleaChatModel</span><span class="p">(</span><span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">)</span>
+
+<span class="c1"># Option 2: Ollama backend</span>
+<span class="n">ollama_backend</span> <span class="o">=</span> <span class="n">OllamaModelBackend</span><span class="p">(</span><span class="n">model_id</span><span class="o">=</span><span class="s2">&quot;llama2&quot;</span><span class="p">)</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">MelleaSession</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="n">ollama_backend</span><span class="p">)</span>
+<span class="n">chat_model</span> <span class="o">=</span> <span class="n">MelleaChatModel</span><span class="p">(</span><span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">)</span>
+
+<span class="c1"># Use the same LangChain interface regardless of backend</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">chat_model</span><span class="o">.</span><span class="n">invoke</span><span class="p">([</span><span class="n">HumanMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;Hello!&quot;</span><span class="p">)])</span>
+</code></pre></div>
+
+<h3 id="async-example">Async Example</h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_core.messages</span><span class="w"> </span><span class="kn">import</span> <span class="n">HumanMessage</span>
+
+<span class="c1"># Async invoke</span>
+<span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">chat_model</span><span class="o">.</span><span class="n">ainvoke</span><span class="p">([</span>
+    <span class="n">HumanMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;Write a short story about AI&quot;</span><span class="p">)</span>
+<span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="using-with-langchain-chains">Using with LangChain Chains</h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.chains</span><span class="w"> </span><span class="kn">import</span> <span class="n">LLMChain</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain.prompts</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatPromptTemplate</span>
+
+<span class="c1"># Create a chain</span>
+<span class="n">prompt</span> <span class="o">=</span> <span class="n">ChatPromptTemplate</span><span class="o">.</span><span class="n">from_messages</span><span class="p">([</span>
+    <span class="p">(</span><span class="s2">&quot;system&quot;</span><span class="p">,</span> <span class="s2">&quot;You are a helpful assistant that explains technical concepts.&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">{input}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="p">])</span>
+
+<span class="n">chain</span> <span class="o">=</span> <span class="n">prompt</span> <span class="o">|</span> <span class="n">chat_model</span>
+
+<span class="c1"># Run the chain</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">chain</span><span class="o">.</span><span class="n">invoke</span><span class="p">({</span><span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;What is generative programming?&quot;</span><span class="p">})</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="using-requirements-and-validation">Using Requirements and Validation</h3>
+<p>Mellea's requirements and sampling strategies ensure LLM outputs meet specific criteria:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">mellea.stdlib.requirements</span><span class="w"> </span><span class="kn">import</span> <span class="n">req</span><span class="p">,</span> <span class="n">check</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea.stdlib.sampling</span><span class="w"> </span><span class="kn">import</span> <span class="n">RejectionSamplingStrategy</span>
+
+<span class="c1"># Define requirements</span>
+<span class="n">requirements</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">req</span><span class="p">(</span><span class="s2">&quot;The email should have a salutation&quot;</span><span class="p">),</span>
+    <span class="n">req</span><span class="p">(</span><span class="s2">&quot;Use only lower-case letters&quot;</span><span class="p">),</span>
+    <span class="n">check</span><span class="p">(</span><span class="s2">&quot;Do not mention purple elephants&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="c1"># Use with strategy</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">chat_model</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span>
+    <span class="p">[</span><span class="n">HumanMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;Write an email to John about the meeting&quot;</span><span class="p">)],</span>
+    <span class="n">requirements</span><span class="o">=</span><span class="n">requirements</span><span class="p">,</span>
+    <span class="n">strategy</span><span class="o">=</span><span class="n">RejectionSamplingStrategy</span><span class="p">(</span><span class="n">loop_budget</span><span class="o">=</span><span class="mi">5</span><span class="p">),</span>
+    <span class="n">return_sampling_results</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># Access validation results</span>
+<span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">success</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Requirements met:&quot;</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Requirements not met, using best attempt&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="using-with-langchain-chains_1">Using with LangChain Chains</h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_core.prompts</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatPromptTemplate</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_core.output_parsers</span><span class="w"> </span><span class="kn">import</span> <span class="n">StrOutputParser</span>
+
+<span class="c1"># Create a chain with requirements</span>
+<span class="n">prompt</span> <span class="o">=</span> <span class="n">ChatPromptTemplate</span><span class="o">.</span><span class="n">from_messages</span><span class="p">([</span>
+    <span class="p">(</span><span class="s2">&quot;system&quot;</span><span class="p">,</span> <span class="s2">&quot;You are a helpful assistant.&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;human&quot;</span><span class="p">,</span> <span class="s2">&quot;Write an email to </span><span class="si">{name}</span><span class="s2"> about: </span><span class="si">{topic}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="p">])</span>
+
+<span class="n">model_with_requirements</span> <span class="o">=</span> <span class="n">chat_model</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span>
+    <span class="n">requirements</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">req</span><span class="p">(</span><span class="s2">&quot;The email should have a salutation&quot;</span><span class="p">),</span>
+        <span class="n">req</span><span class="p">(</span><span class="s2">&quot;The email should be professional&quot;</span><span class="p">),</span>
+    <span class="p">],</span>
+    <span class="n">strategy</span><span class="o">=</span><span class="n">RejectionSamplingStrategy</span><span class="p">(</span><span class="n">loop_budget</span><span class="o">=</span><span class="mi">3</span><span class="p">),</span>
+<span class="p">)</span>
+
+<span class="n">chain</span> <span class="o">=</span> <span class="n">prompt</span> <span class="o">|</span> <span class="n">model_with_requirements</span> <span class="o">|</span> <span class="n">StrOutputParser</span><span class="p">()</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">chain</span><span class="o">.</span><span class="n">invoke</span><span class="p">({</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Dr. Smith&quot;</span><span class="p">,</span> <span class="s2">&quot;topic&quot;</span><span class="p">:</span> <span class="s2">&quot;conference&quot;</span><span class="p">})</span>
+<span class="o">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span> <span class="n">HEAD</span>
+<span class="o">=======</span>
+
+<span class="c1">## Output Parsers and Guardrails</span>
+
+<span class="n">The</span> <span class="n">integration</span> <span class="n">provides</span> <span class="n">two</span> <span class="n">components</span> <span class="k">for</span> <span class="n">validating</span> <span class="n">LLM</span> <span class="n">outputs</span> <span class="n">using</span> <span class="n">Mellea</span><span class="s1">&#39;s requirements system:</span>
+
+<span class="c1">### MelleaOutputParser</span>
+
+<span class="n">A</span> <span class="n">LangChain</span> <span class="err">`</span><span class="n">BaseOutputParser</span><span class="err">`</span> <span class="n">that</span> <span class="n">validates</span> <span class="n">outputs</span> <span class="n">using</span> <span class="n">deterministic</span> <span class="n">validation</span> <span class="n">functions</span><span class="o">.</span> <span class="n">Perfect</span> <span class="k">for</span> <span class="n">use</span> <span class="ow">in</span> <span class="n">chains</span> <span class="k">with</span> <span class="n">automatic</span> <span class="n">validation</span><span class="o">.</span>
+
+<span class="err">```</span><span class="n">python</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea_langchain</span><span class="w"> </span><span class="kn">import</span> <span class="n">MelleaOutputParser</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea.stdlib.requirements</span><span class="w"> </span><span class="kn">import</span> <span class="n">simple_validate</span>
+
+<span class="c1"># Create parser with validation requirements</span>
+<span class="n">parser</span> <span class="o">=</span> <span class="n">MelleaOutputParser</span><span class="p">(</span>
+    <span class="n">requirements</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">simple_validate</span><span class="p">(</span>
+            <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">,</span>
+            <span class="s2">&quot;Must be under 100 words&quot;</span>
+        <span class="p">),</span>
+        <span class="n">simple_validate</span><span class="p">(</span>
+            <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s2">&quot;AI&quot;</span> <span class="ow">in</span> <span class="n">x</span><span class="p">,</span>
+            <span class="s2">&quot;Must mention AI&quot;</span>
+        <span class="p">),</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+
+<span class="c1"># Use in a chain</span>
+<span class="n">chain</span> <span class="o">=</span> <span class="n">prompt</span> <span class="o">|</span> <span class="n">model</span> <span class="o">|</span> <span class="n">parser</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">chain</span><span class="o">.</span><span class="n">invoke</span><span class="p">({</span><span class="s2">&quot;topic&quot;</span><span class="p">:</span> <span class="s2">&quot;artificial intelligence&quot;</span><span class="p">})</span>
+</code></pre></div>
+
+<p><strong>Key Features:</strong>
+- Stateless design (no session required)
+- Fast, deterministic validation
+- Raises <code>OutputParserException</code> on failure (strict mode)
+- Returns text anyway in non-strict mode
+- Provides format instructions for LLM</p>
+<h3 id="melleaguardrail">MelleaGuardrail</h3>
+<p>An independent validation component that can be used standalone or composed with other guardrails.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">mellea_langchain</span><span class="w"> </span><span class="kn">import</span> <span class="n">MelleaGuardrail</span>
+
+<span class="c1"># Create guardrail</span>
+<span class="n">guardrail</span> <span class="o">=</span> <span class="n">MelleaGuardrail</span><span class="p">(</span>
+    <span class="n">requirements</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">simple_validate</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">,</span> <span class="s2">&quot;At least 50 chars&quot;</span><span class="p">),</span>
+        <span class="n">simple_validate</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">500</span><span class="p">,</span> <span class="s2">&quot;Under 500 chars&quot;</span><span class="p">),</span>
+    <span class="p">],</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;length_check&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># Validate output</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">guardrail</span><span class="o">.</span><span class="n">validate</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">result</span><span class="o">.</span><span class="n">passed</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Validation failed: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">errors</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Key Features:</strong>
+- Independent validation (not tied to chains)
+- Returns detailed <code>ValidationResult</code>
+- Composable with other guardrails
+- Supports <code>&amp;</code> operator for composition</p>
+<h3 id="composing-guardrails">Composing Guardrails</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Create specialized guardrails</span>
+<span class="n">tone_guard</span> <span class="o">=</span> <span class="n">MelleaGuardrail</span><span class="p">(</span>
+    <span class="n">requirements</span><span class="o">=</span><span class="p">[</span><span class="n">simple_validate</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">islower</span><span class="p">(),</span> <span class="s2">&quot;Lowercase only&quot;</span><span class="p">)]</span>
+<span class="p">)</span>
+<span class="n">length_guard</span> <span class="o">=</span> <span class="n">MelleaGuardrail</span><span class="p">(</span>
+    <span class="n">requirements</span><span class="o">=</span><span class="p">[</span><span class="n">simple_validate</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">,</span> <span class="s2">&quot;Under 100 chars&quot;</span><span class="p">)]</span>
+<span class="p">)</span>
+
+<span class="c1"># Compose using &amp; operator</span>
+<span class="n">combined</span> <span class="o">=</span> <span class="n">tone_guard</span> <span class="o">&amp;</span> <span class="n">length_guard</span>
+
+<span class="c1"># Validate with combined requirements</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">combined</span><span class="o">.</span><span class="n">validate</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="integration-with-outputfixingparser">Integration with OutputFixingParser</h3>
+<p>For automatic repair of validation failures:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.output_parsers</span><span class="w"> </span><span class="kn">import</span> <span class="n">OutputFixingParser</span>
+
+<span class="c1"># Create base parser</span>
+<span class="n">base_parser</span> <span class="o">=</span> <span class="n">MelleaOutputParser</span><span class="p">(</span>
+    <span class="n">requirements</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">simple_validate</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;{&quot;</span><span class="p">),</span> <span class="s2">&quot;Must be JSON&quot;</span><span class="p">),</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+
+<span class="c1"># Wrap with OutputFixingParser for auto-repair</span>
+<span class="n">fixing_parser</span> <span class="o">=</span> <span class="n">OutputFixingParser</span><span class="o">.</span><span class="n">from_llm</span><span class="p">(</span>
+    <span class="n">parser</span><span class="o">=</span><span class="n">base_parser</span><span class="p">,</span>
+    <span class="n">llm</span><span class="o">=</span><span class="n">model</span>
+<span class="p">)</span>
+
+<span class="c1"># Will automatically retry and fix on validation failure</span>
+<span class="n">chain</span> <span class="o">=</span> <span class="n">prompt</span> <span class="o">|</span> <span class="n">model</span> <span class="o">|</span> <span class="n">fixing_parser</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">chain</span><span class="o">.</span><span class="n">invoke</span><span class="p">({</span><span class="s2">&quot;topic&quot;</span><span class="p">:</span> <span class="s2">&quot;AI&quot;</span><span class="p">})</span>
+</code></pre></div>
+
+<h3 id="llm-vs-deterministic-validation">LLM vs Deterministic Validation</h3>
+<p><strong>Deterministic Validation (Output Parser):</strong>
+- Use <code>simple_validate()</code> with custom functions
+- Fast (&lt;1ms), predictable
+- No LLM calls required
+- Perfect for format, length, pattern checks</p>
+<p><strong>LLM Validation (During Generation):</strong>
+- Use <code>req()</code> or <code>check()</code> in <code>MelleaChatModel</code>
+- Validates during generation
+- Better for semantic requirements
+- Uses Mellea's sampling strategies</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Combine both approaches</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">MelleaChatModel</span><span class="p">(</span>
+    <span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">,</span>
+    <span class="n">requirements</span><span class="o">=</span><span class="p">[</span><span class="n">req</span><span class="p">(</span><span class="s2">&quot;Must be professional&quot;</span><span class="p">)]</span>  <span class="c1"># LLM validation</span>
+<span class="p">)</span>
+
+<span class="n">parser</span> <span class="o">=</span> <span class="n">MelleaOutputParser</span><span class="p">(</span>
+    <span class="n">requirements</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">simple_validate</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">500</span><span class="p">,</span> <span class="s2">&quot;Under 500 chars&quot;</span><span class="p">)</span>  <span class="c1"># Deterministic</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+
+<span class="n">chain</span> <span class="o">=</span> <span class="n">prompt</span> <span class="o">|</span> <span class="n">model</span> <span class="o">|</span> <span class="n">parser</span>  <span class="c1"># Both validations applied</span>
+</code></pre></div>
+
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>aaec38e (adding missing changes)
+print(result)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<div class="codehilite"><pre><span></span><code>## Architecture
+
+### Component Overview
+</code></pre></div>
+
+<p>┌─────────────────────────────────────────────────────────┐
+│              LangChain Application                       │
+│  (Chains, Agents, LangServe, etc.)                      │
+└─────────────────────┬───────────────────────────────────┘
+                      │
+                      ▼
+┌─────────────────────────────────────────────────────────┐
+│              MelleaChatModel                             │
+│  (Implements BaseChatModel interface)                   │
+│  ┌─────────────────────────────────────────────────┐   │
+│  │  • Message Conversion                            │   │
+│  │  • Streaming Handler                             │   │
+│  │  • Tool Call Handler                             │   │
+│  │  • Callback Integration                          │   │
+│  └─────────────────────────────────────────────────┘   │
+└─────────────────────┬───────────────────────────────────┘
+                      │
+                      ▼
+┌─────────────────────────────────────────────────────────┐
+│                 Mellea Session                           │
+│  (Generative Programming Framework)                     │
+└─────────────────────┬───────────────────────────────────┘
+                      │
+                      ▼
+┌─────────────────────────────────────────────────────────┐
+│              Mellea Backends                             │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐             │
+│  │  Ollama  │  │  OpenAI  │  │ WatsonX  │  ...        │
+│  └──────────┘  └──────────┘  └──────────┘             │
+└─────────────────────────────────────────────────────────┘</p>
+<div class="codehilite"><pre><span></span><code><span class="gu">##</span># Key Features
+
+<span class="gu">##</span>## 1. Seamless Integration
+
+Works with any Mellea backend while providing a standard LangChain interface:
+
+```python
+<span class="gh">#</span> Same code works with different backends
+backends = [
+    OllamaModelBackend(model_id=&quot;llama2&quot;),
+    OpenAIBackend(model_id=&quot;gpt-4&quot;),
+    WatsonXBackend(model_id=&quot;granite-13b&quot;),
+]
+
+for backend in backends:
+    m = MelleaSession(backend=backend)
+    chat_model = MelleaChatModel(mellea_session=m)
+    # Use with any LangChain component
+</code></pre></div>
+
+<h4 id="2-message-format-conversion">2. Message Format Conversion</h4>
+<p>Automatically converts between LangChain and Mellea message formats:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># LangChain → Mellea</span>
+<span class="n">HumanMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span> <span class="err">→</span> <span class="n">Message</span><span class="p">(</span><span class="n">role</span><span class="o">=</span><span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="n">content</span><span class="o">=</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+<span class="n">AIMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;Hi&quot;</span><span class="p">)</span> <span class="err">→</span> <span class="n">Message</span><span class="p">(</span><span class="n">role</span><span class="o">=</span><span class="s2">&quot;assistant&quot;</span><span class="p">,</span> <span class="n">content</span><span class="o">=</span><span class="s2">&quot;Hi&quot;</span><span class="p">)</span>
+<span class="n">SystemMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">)</span> <span class="err">→</span> <span class="n">Message</span><span class="p">(</span><span class="n">role</span><span class="o">=</span><span class="s2">&quot;system&quot;</span><span class="p">,</span> <span class="n">content</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">)</span>
+<span class="n">ToolMessage</span><span class="p">(</span><span class="o">...</span><span class="p">)</span> <span class="err">→</span> <span class="n">Message</span><span class="p">(</span><span class="n">role</span><span class="o">=</span><span class="s2">&quot;tool&quot;</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</code></pre></div>
+
+<h4 id="3-async-support">3. Async Support</h4>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Async invoke</span>
+<span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">chat_model</span><span class="o">.</span><span class="n">ainvoke</span><span class="p">([</span><span class="n">HumanMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;Tell me a story&quot;</span><span class="p">)])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+
+<span class="c1"># Async batch processing</span>
+<span class="n">responses</span> <span class="o">=</span> <span class="k">await</span> <span class="n">chat_model</span><span class="o">.</span><span class="n">abatch</span><span class="p">([</span>
+    <span class="p">[</span><span class="n">HumanMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;What is 2+2?&quot;</span><span class="p">)],</span>
+    <span class="p">[</span><span class="n">HumanMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;What is the capital of France?&quot;</span><span class="p">)]</span>
+<span class="p">])</span>
+</code></pre></div>
+
+<h4 id="4-tool-calling-for-agents">4. Tool Calling for Agents</h4>
+<p>Automatic tool conversion and execution with LangChain agents:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Tools are automatically converted between formats</span>
+<span class="n">langchain_tools</span> <span class="o">=</span> <span class="p">[</span><span class="n">Tool</span><span class="p">(</span><span class="o">...</span><span class="p">),</span> <span class="n">Tool</span><span class="p">(</span><span class="o">...</span><span class="p">)]</span>
+<span class="c1"># MelleaChatModel handles the conversion internally</span>
+<span class="n">agent</span> <span class="o">=</span> <span class="n">create_tool_calling_agent</span><span class="p">(</span><span class="n">llm</span><span class="o">=</span><span class="n">chat_model</span><span class="p">,</span> <span class="n">tools</span><span class="o">=</span><span class="n">langchain_tools</span><span class="p">)</span>
+</code></pre></div>
+
+<h4 id="5-callback-support">5. Callback Support</h4>
+<p>Full integration with LangChain's callback system:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.callbacks</span><span class="w"> </span><span class="kn">import</span> <span class="n">StdOutCallbackHandler</span>
+
+<span class="c1"># Callbacks work automatically</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">chat_model</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span>
+    <span class="p">[</span><span class="n">HumanMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;Hello&quot;</span><span class="p">)],</span>
+    <span class="n">config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;callbacks&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">StdOutCallbackHandler</span><span class="p">()]}</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="project-structure">Project Structure</h2>
+<div class="codehilite"><pre><span></span><code><span class="n">langchain</span><span class="o">/</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">README</span><span class="o">.</span><span class="n">md</span><span class="w">                          </span><span class="c1"># This file</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">GETTING_STARTED</span><span class="o">.</span><span class="n">md</span><span class="w">                 </span><span class="c1"># Quick start guide</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">pyproject</span><span class="o">.</span><span class="n">toml</span><span class="w">                     </span><span class="c1"># Project configuration</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">src</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">mellea_langchain</span><span class="o">/</span>
+<span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="n">__init__</span><span class="o">.</span><span class="n">py</span><span class="w">               </span><span class="c1"># Package exports</span>
+<span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="n">chat_model</span><span class="o">.</span><span class="n">py</span><span class="w">             </span><span class="c1"># MelleaChatModel class</span>
+<span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="n">message_conversion</span><span class="o">.</span><span class="n">py</span><span class="w">     </span><span class="c1"># Message format conversion</span>
+<span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="n">tool_conversion</span><span class="o">.</span><span class="n">py</span><span class="w">        </span><span class="c1"># Tool calling utilities</span>
+<span class="err">│</span><span class="w">       </span><span class="err">└──</span><span class="w"> </span><span class="n">guardrails</span><span class="o">.</span><span class="n">py</span><span class="w">             </span><span class="c1"># Output parsers and guardrails</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">tests</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">test_chat_model</span><span class="o">.</span><span class="n">py</span><span class="w">            </span><span class="c1"># Chat model tests</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">test_message_conversion</span><span class="o">.</span><span class="n">py</span><span class="w">    </span><span class="c1"># Message conversion tests</span>
+<span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">test_tool_conversion</span><span class="o">.</span><span class="n">py</span><span class="w">       </span><span class="c1"># Tool conversion tests</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">test_guardrails</span><span class="o">.</span><span class="n">py</span><span class="w">            </span><span class="c1"># Guardrails tests</span>
+<span class="err">└──</span><span class="w"> </span><span class="n">examples</span><span class="o">/</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">basic_usage</span><span class="o">.</span><span class="n">py</span><span class="w">                </span><span class="c1"># Basic example</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">async_example</span><span class="o">.</span><span class="n">py</span><span class="w">              </span><span class="c1"># Sync and async example</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">tools_example</span><span class="o">.</span><span class="n">py</span><span class="w">              </span><span class="c1"># Tool calling example</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">langchain_chain</span><span class="o">.</span><span class="n">py</span><span class="w">            </span><span class="c1"># Chain example</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">requirements_strategy_example</span><span class="o">.</span><span class="n">py</span><span class="w">  </span><span class="c1"># Requirements/validation example</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">output_parser_basic</span><span class="o">.</span><span class="n">py</span><span class="w">        </span><span class="c1"># Output parser examples</span>
+<span class="w">    </span><span class="err">└──</span><span class="w"> </span><span class="n">guardrail_usage</span><span class="o">.</span><span class="n">py</span><span class="w">            </span><span class="c1"># Guardrail examples</span>
+</code></pre></div>
+
+<h2 id="features">Features</h2>
+<h3 id="implemented">✅ Implemented</h3>
+<ul>
+<li>Chat completion (sync and async)</li>
+<li>Streaming (sync and async)</li>
+<li>Message conversion (all LangChain message types)</li>
+<li>Tool calling with LangChain agents</li>
+<li>Requirements and validation strategies</li>
+<li>Sampling results and retry logic</li>
+<li>LangChain chain integration
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+=======</li>
+<li><strong>Output parsers with requirement validation</strong></li>
+<li><strong>Guardrails for independent validation</strong></li>
+<li><strong>Requirement composition and reuse</strong><blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>aaec38e (adding missing changes)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
+<li>Comprehensive test coverage</li>
+</ul>
+<h3 id="future-enhancements">📋 Future Enhancements</h3>
+<ul>
+<li>LangServe deployment examples</li>
+<li>Additional backend examples</li>
+<li>Performance benchmarks</li>
+<li>Advanced agent patterns</li>
+</ul>
+<h2 id="development">Development</h2>
+<h3 id="setup-development-environment">Setup Development Environment</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Clone the repository</span>
+git<span class="w"> </span>clone<span class="w"> </span>&lt;repository-url&gt;
+<span class="nb">cd</span><span class="w"> </span>langchain
+
+<span class="c1"># Create virtual environment</span>
+python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+<span class="nb">source</span><span class="w"> </span>.venv/bin/activate<span class="w">  </span><span class="c1"># On Windows: .venv\Scripts\activate</span>
+
+<span class="c1"># Install in development mode</span>
+pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;.[dev]&quot;</span>
+</code></pre></div>
+
+<h3 id="running-tests">Running Tests</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Run all tests</span>
+pytest
+
+<span class="c1"># Run with coverage</span>
+pytest<span class="w"> </span>--cov<span class="o">=</span>mellea_langchain<span class="w"> </span>--cov-report<span class="o">=</span>html
+
+<span class="c1"># Run specific test file</span>
+pytest<span class="w"> </span>tests/test_chat_model.py
+
+<span class="c1"># Run integration tests</span>
+pytest<span class="w"> </span>tests/integration/
+</code></pre></div>
+
+<h3 id="code-quality">Code Quality</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Format code</span>
+ruff<span class="w"> </span>format<span class="w"> </span>.
+
+<span class="c1"># Lint code</span>
+ruff<span class="w"> </span>check<span class="w"> </span>.
+
+<span class="c1"># Type checking</span>
+mypy<span class="w"> </span>src/mellea_langchain
+</code></pre></div>
+
+<h2 id="documentation">Documentation</h2>
+<ul>
+<li><strong><a href="GETTING_STARTED.md">Getting Started Guide</a></strong>: Step-by-step setup and usage</li>
+<li><strong>Examples</strong>: See the <code>examples/</code> directory for complete examples</li>
+<li><strong>Tests</strong>: See the <code>tests/</code> directory for usage patterns</li>
+</ul>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Python &gt;= 3.10</li>
+<li>mellea &gt;= 0.3.0</li>
+<li>langchain-core &gt;= 0.3.0</li>
+<li>pydantic &gt;= 2.0.0</li>
+</ul>
+<p>Optional dependencies:
+- langchain &gt;= 0.3.0 (for chains and agents)
+- langserve &gt;= 0.3.0 (for deployment)</p>
+<h2 id="use-cases">Use Cases</h2>
+<h3 id="1-structured-generative-programming-in-langchain">1. Structured Generative Programming in LangChain</h3>
+<p>Use Mellea's structured approach within LangChain applications:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Leverage Mellea&#39;s validation and sampling strategies</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mellea.stdlib.sampling</span><span class="w"> </span><span class="kn">import</span> <span class="n">RejectionSamplingStrategy</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="n">MelleaSession</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="n">backend</span><span class="p">)</span>
+<span class="n">chat_model</span> <span class="o">=</span> <span class="n">MelleaChatModel</span><span class="p">(</span><span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">)</span>
+
+<span class="c1"># Use with LangChain while benefiting from Mellea&#39;s features</span>
+<span class="n">chain</span> <span class="o">=</span> <span class="n">prompt</span> <span class="o">|</span> <span class="n">chat_model</span>
+</code></pre></div>
+
+<h3 id="2-multi-backend-langchain-applications">2. Multi-Backend LangChain Applications</h3>
+<p>Easily switch between different model providers:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Development: Use Ollama</span>
+<span class="n">dev_model</span> <span class="o">=</span> <span class="n">MelleaChatModel</span><span class="p">(</span>
+    <span class="n">mellea_session</span><span class="o">=</span><span class="n">MelleaSession</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="n">OllamaModelBackend</span><span class="p">())</span>
+<span class="p">)</span>
+
+<span class="c1"># Production: Use OpenAI</span>
+<span class="n">prod_model</span> <span class="o">=</span> <span class="n">MelleaChatModel</span><span class="p">(</span>
+    <span class="n">mellea_session</span><span class="o">=</span><span class="n">MelleaSession</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="n">OpenAIBackend</span><span class="p">())</span>
+<span class="p">)</span>
+
+<span class="c1"># Same chain works with both</span>
+<span class="n">chain</span> <span class="o">=</span> <span class="n">prompt</span> <span class="o">|</span> <span class="n">dev_model</span>  <span class="c1"># or prod_model</span>
+</code></pre></div>
+
+<h3 id="3-langchain-agents-with-mellea">3. LangChain Agents with Mellea</h3>
+<p>Build agents that leverage Mellea's capabilities:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Create agent with Mellea backend</span>
+<span class="n">agent</span> <span class="o">=</span> <span class="n">create_tool_calling_agent</span><span class="p">(</span>
+    <span class="n">llm</span><span class="o">=</span><span class="n">MelleaChatModel</span><span class="p">(</span><span class="n">mellea_session</span><span class="o">=</span><span class="n">m</span><span class="p">),</span>
+    <span class="n">tools</span><span class="o">=</span><span class="n">tools</span><span class="p">,</span>
+    <span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="contributing">Contributing</h2>
+<p>We welcome contributions! Please see our <a href="../CONTRIBUTING.md">Contributing Guide</a> for details.</p>
+<h3 id="areas-for-contribution">Areas for Contribution</h3>
+<ol>
+<li><strong>Features</strong>: Implement additional LangChain integrations</li>
+<li><strong>Testing</strong>: Add more integration tests and examples</li>
+<li><strong>Documentation</strong>: Improve docs and add tutorials</li>
+<li><strong>Performance</strong>: Optimize critical paths</li>
+<li><strong>Examples</strong>: Create more usage examples</li>
+</ol>
+<h2 id="license">License</h2>
+<p>This project is licensed under the Apache License 2.0 - see the <a href="../LICENSE">LICENSE</a> file for details.</p>
+<h2 id="support">Support</h2>
+<ul>
+<li><strong>Issues</strong>: Report bugs and request features on <a href="https://github.com/generative-computing/mellea-adapter/issues">GitHub Issues</a></li>
+<li><strong>Discord</strong>: Join the <a href="https://ibm.biz/mellea-discord">Mellea Discord</a> for discussions</li>
+<li><strong>Documentation</strong>: Visit <a href="https://mellea.ai/">mellea.ai</a> for Mellea docs</li>
+</ul>
+<h2 id="faq">FAQ</h2>
+<h3 id="q-why-use-this-instead-of-langchains-built-in-models">Q: Why use this instead of LangChain's built-in models?</h3>
+<p><strong>A</strong>: This integration combines:
+- Mellea's structured generative programming approach
+- LangChain's extensive ecosystem and tooling
+- Ability to use any Mellea backend with LangChain</p>
+<h3 id="q-does-this-support-all-langchain-features">Q: Does this support all LangChain features?</h3>
+<p><strong>A</strong>: It supports the core features: chat, tool calling, chains, agents, and LangServe. Note: Streaming is not currently supported - <code>stream()</code> and <code>astream()</code> methods return the full response as a single chunk.</p>
+<h3 id="q-can-i-use-melleas-advanced-features">Q: Can I use Mellea's advanced features?</h3>
+<p><strong>A</strong>: Yes! You configure your Mellea session with all desired features, then wrap it with <code>MelleaChatModel</code>.</p>
+<h3 id="q-what-about-performance">Q: What about performance?</h3>
+<p><strong>A</strong>: The overhead is minimal. The wrapper primarily handles message format conversion.</p>
+<h3 id="q-which-mellea-backends-are-supported">Q: Which Mellea backends are supported?</h3>
+<p><strong>A</strong>: All Mellea backends work, including Ollama, OpenAI, WatsonX, HuggingFace, and custom backends.</p>
+<h2 id="examples">Examples</h2>
+<p>See the <code>examples/</code> directory for complete examples:</p>
+<p><strong>Chat Model:</strong>
+- <a href="examples/basic_usage.py"><code>basic_usage.py</code></a>: Simple chat completion
+- <a href="examples/async_example.py"><code>async_example.py</code></a>: Synchronous and asynchronous usage
+- <a href="examples/tools_example.py"><code>tools_example.py</code></a>: Function calling with agents
+- <a href="examples/langchain_chain.py"><code>langchain_chain.py</code></a>: Using with chains
+- <a href="examples/requirements_strategy_example.py"><code>requirements_strategy_example.py</code></a>: Requirements and validation</p>
+<p><strong>Output Parsers &amp; Guardrails:</strong>
+- <a href="examples/output_parser_basic.py"><code>output_parser_basic.py</code></a>: Basic output parser usage
+- <a href="examples/guardrail_usage.py"><code>guardrail_usage.py</code></a>: Guardrail validation and composition</p>
+<h2 id="acknowledgments">Acknowledgments</h2>
+<ul>
+<li><strong>Mellea Team</strong>: For creating the generative programming framework</li>
+<li><strong>LangChain Team</strong>: For the comprehensive LLM application framework</li>
+<li><strong>Contributors</strong>: Everyone who helps improve this integration</li>
+</ul>
+  </div>
+
+  <h2>Metadata</h2>
+  <h3>Authors</h3>
+  <ul class="chip-list">
+<li>Mellea Team &lt;mellea-team@ibm.com&gt;</li>  </ul>
+
+
+  <h3>Project URLs</h3>
+  <ul>
+      <li>Homepage: <a href="https://github.com/generative-computing/mellea-adapter">https://github.com/generative-computing/mellea-adapter</a></li>
+      <li>Documentation: <a href="https://mellea.ai/">https://mellea.ai/</a></li>
+      <li>Repository: <a href="https://github.com/generative-computing/mellea-adapter">https://github.com/generative-computing/mellea-adapter</a></li>
+      <li>Issues: <a href="https://github.com/generative-computing/mellea-adapter/issues">https://github.com/generative-computing/mellea-adapter/issues</a></li>
+  </ul>
+
+  <details>
+    <summary>Classifiers (8)</summary>
+    <ul class="chip-list">
+<li><code>Programming Language :: Python :: 3</code></li><li><code>Programming Language :: Python :: 3.11</code></li><li><code>Programming Language :: Python :: 3.12</code></li><li><code>License :: OSI Approved :: Apache Software License</code></li><li><code>Operating System :: OS Independent</code></li><li><code>Development Status :: 3 - Alpha</code></li><li><code>Intended Audience :: Developers</code></li><li><code>Topic :: Software Development :: Libraries :: Python Modules</code></li>    </ul>
+  </details>
+</article><article id="pkg-mellea-reqlib" class="pane" role="tabpanel" hidden>
+  <h1><code>mellea-reqlib</code></h1>
+  <p class="lede">mellea-contribs is a library for incubating generative programming libraries</p>
+
+  <p class="badges">
+      <span class="badge muted">v0.0.1 (unreleased)</span>
+<span class="badge muted">Apache Software License</span>  </p>
+
+  <h2>Install</h2>
+  <p>No release has been tagged yet. Install from <code>main</code>:</p>
+  <pre><code>pip install &#34;git+https://github.com/generative-computing/mellea-contribs.git@main#subdirectory=mellea_contribs/reqlib_package&#34;</code></pre>
+
+  <h2>Compatibility</h2>
+  <dl class="compat">
+    <dt><code>mellea</code></dt>
+    <dd><code>mellea[litellm]==0.3.2</code></dd>
+    <dt>Python</dt>
+    <dd><code>&gt;=3.11</code></dd>
+  </dl>
+
+  <h3>Other dependencies</h3>
+  <ul class="chip-list">
+      <li><code>rapidfuzz&gt;=3.14.3</code></li>
+      <li><code>eyecite</code></li>
+      <li><code>citeurl</code></li>
+      <li><code>playwright</code></li>
+      <li><code>markdown</code></li>
+  </ul>
+
+  <h2>Version history</h2>
+  <p class="muted">No releases yet.</p>
+
+  <h2>README</h2>
+  <div class="readme">
+  <h1 id="reqlib_package">Reqlib_package</h1>
+<p>Purpose: Requirements library for validation and constraints in generative systems</p>
+<p>Key Features:
+* Requirement specification and validation
+* Integration with Mellea's validation framework</p>
+<ul>
+<li>Dependencies: mellea&gt;=0.3.x</li>
+<li>Python Version: ≥3.11</li>
+<li>CI Requirements: No Ollama needed (skip_ollama=true)</li>
+<li>Timeout: 30 minutes</li>
+</ul>
+  </div>
+
+  <h2>Metadata</h2>
+  <h3>Authors</h3>
+  <ul class="chip-list">
+<li>Nathan Fulton &lt;nathan@ibm.com&gt;</li>  </ul>
+
+
+
+  <details>
+    <summary>Classifiers (3)</summary>
+    <ul class="chip-list">
+<li><code>Programming Language :: Python :: 3</code></li><li><code>License :: OSI Approved :: Apache Software License</code></li><li><code>Operating System :: OS Independent</code></li>    </ul>
+  </details>
+</article><article id="pkg-mellea-tools" class="pane" role="tabpanel" hidden>
+  <h1><code>mellea-tools</code></h1>
+  <p class="lede">mellea-contribs is a library for incubating generative programming libraries</p>
+
+  <p class="badges">
+      <span class="badge muted">v0.0.1 (unreleased)</span>
+<span class="badge muted">Apache Software License</span>  </p>
+
+  <h2>Install</h2>
+  <p>No release has been tagged yet. Install from <code>main</code>:</p>
+  <pre><code>pip install &#34;git+https://github.com/generative-computing/mellea-contribs.git@main#subdirectory=mellea_contribs/tools_package&#34;</code></pre>
+
+  <h2>Compatibility</h2>
+  <dl class="compat">
+    <dt><code>mellea</code></dt>
+    <dd><code>mellea[litellm]==0.3.2</code></dd>
+    <dt>Python</dt>
+    <dd><code>&gt;=3.11</code></dd>
+  </dl>
+
+  <h3>Other dependencies</h3>
+  <ul class="chip-list">
+      <li><code>rapidfuzz&gt;=3.14.3</code></li>
+      <li><code>eyecite</code></li>
+      <li><code>citeurl</code></li>
+      <li><code>playwright</code></li>
+      <li><code>markdown</code></li>
+  </ul>
+
+  <h2>Version history</h2>
+  <p class="muted">No releases yet.</p>
+
+  <h2>README</h2>
+  <div class="readme">
+  <p>README.md</p>
+  </div>
+
+  <h2>Metadata</h2>
+  <h3>Authors</h3>
+  <ul class="chip-list">
+<li>Nathan Fulton &lt;nathan@ibm.com&gt;</li>  </ul>
+
+
+
+  <details>
+    <summary>Classifiers (3)</summary>
+    <ul class="chip-list">
+<li><code>Programming Language :: Python :: 3</code></li><li><code>License :: OSI Approved :: Apache Software License</code></li><li><code>Operating System :: OS Independent</code></li>    </ul>
+  </details>
+</article>  </section>
+</div>
+
+<script src="/static/app.js" defer></script>
+</main>
+<footer class="site-footer">
+  <p>
+    Built 2026-05-26 16:30 UTC · <code>887f22e</code>    · <a href="https://github.com/generative-computing/mellea-contribs">generative-computing/mellea-contribs</a>
+  </p>
+</footer>
+</body>
+</html>

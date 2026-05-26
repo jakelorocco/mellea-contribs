@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="app">
+  <aside class="sidebar" aria-label="Packages">
+    <h2 class="sidebar-title">Packages</h2>
+    <ul class="package-list" role="tablist">
+      <li>
+        <a href="#/" data-target="overview" class="pkg-link" role="tab">Overview</a>
+      </li>
+      {% for entry in packages %}
+        {% set pkg = entry.pkg %}
+        {% set latest = entry.latest_release %}
+        <li>
+          <a href="#/{{ pkg.name }}" data-target="pkg-{{ pkg.name }}" class="pkg-link" role="tab">
+            <span class="pkg-name"><code>{{ pkg.name }}</code></span>
+            <span class="pkg-meta">
+              {% if latest %}v{{ latest.version }}{% else %}<span class="muted">unreleased</span>{% endif %}
+            </span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </aside>
+
+  <section class="content">
+    <article id="overview" class="pane" role="tabpanel">
+      <h1>mellea-contribs packages</h1>
+      <p class="lede">
+        Incubation point for the mellea ecosystem. Each package ships independently;
+        select one in the sidebar for install instructions, release history, and
+        compatibility with <a href="https://github.com/generative-computing/mellea"><code>mellea</code></a>.
+      </p>
+
+      <p>
+        Source repo:
+        <a href="https://github.com/{{ build.repo }}">github.com/{{ build.repo }}</a>
+        · This site lists every subpackage under <code>mellea_contribs/</code>,
+        their tagged releases, and exact <code>pip install</code> commands.
+      </p>
+
+      <table class="package-index">
+        <thead>
+          <tr>
+            <th>Package</th>
+            <th>Description</th>
+            <th>Latest</th>
+            <th><code>mellea</code></th>
+            <th>Python</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for entry in packages %}
+          {% set pkg = entry.pkg %}
+          {% set latest = entry.latest_release %}
+          <tr>
+            <td><a href="#/{{ pkg.name }}" class="pkg-link" data-target="pkg-{{ pkg.name }}"><code>{{ pkg.name }}</code></a></td>
+            <td>{{ pkg.description }}</td>
+            <td>
+              {% if latest %}
+                <a href="{{ latest.release_url }}">v{{ latest.version }}</a>
+              {% else %}
+                <span class="muted">v{{ pkg.version }} (unreleased)</span>
+              {% endif %}
+            </td>
+            <td>{% if pkg.mellea_constraint %}<code>{{ pkg.mellea_constraint }}</code>{% else %}<span class="muted">—</span>{% endif %}</td>
+            <td>{% if pkg.requires_python %}<code>{{ pkg.requires_python }}</code>{% else %}<span class="muted">—</span>{% endif %}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </article>
+
+    {% for entry in packages %}
+      {% include "_package_detail.html" %}
+    {% endfor %}
+  </section>
+</div>
+
+<script src="{{ asset('static/app.js') }}" defer></script>
+{% endblock %}
